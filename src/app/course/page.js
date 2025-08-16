@@ -13,7 +13,7 @@ export default function Course() {
                 <div className="flex items-center gap-10 justify-center">
                     {tabs.map((item, index) => {
                         return (
-                            <button className="bg-gray-300 hover:bg-red-500 duration-300 hover:text-white w-[200px] py-3 rounded-[5px] cursor-pointer">{item}</button>
+                            <button key={index} className="bg-gray-300 hover:bg-red-500 duration-300 hover:text-white w-[200px] py-3 rounded-[5px] cursor-pointer">{item}</button>
                         )
                     })}
 
