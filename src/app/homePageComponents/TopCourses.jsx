@@ -49,9 +49,9 @@ export function OnlineCourses() {
         Online <span className="text-red-600"> Best Selling </span> Courses
       </h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12 gap-10 lg:my-[40px] ">
-        {onlineCourses.map((item) => {
+        {onlineCourses.map((item,index) => {
           return (
-            <div className="rounded-[10px] shadow-lg lg:h-[500px] h-auto">
+            <div key={index} className="rounded-[10px] shadow-lg lg:h-[500px] h-auto">
               <img
                 className="w-full h-[40%] object-cover rounded-t-[10px]"
                 src={item.image}
@@ -115,9 +115,9 @@ export function OfflineCourses() {
         Offline <span className="text-red-600"> Best Selling </span> Courses
       </h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12 gap-10 lg:my-[40px] ">
-        {OfflineCourse.map((item) => {
+        {OfflineCourse.map((item,index) => {
           return (
-            <div className="rounded-[10px] shadow-lg lg:h-[500px] h-auto">
+            <div key={index} className="rounded-[10px] shadow-lg lg:h-[500px] h-auto">
               <img
                 className="w-full h-[40%] object-cover rounded-t-[10px]"
                 src={item.image}
@@ -181,9 +181,9 @@ export function StudyMaterial() {
         Study Material <span className="text-red-600"> Best Selling </span> Courses
       </h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12 gap-10 lg:my-[40px] ">
-        {studyMaterialCourses.map((item) => {
+        {studyMaterialCourses.map((item,index) => {
           return (
-            <div className="rounded-[10px] shadow-lg lg:h-[500px] h-auto">
+            <div key={index} className="rounded-[10px] shadow-lg lg:h-[500px] h-auto">
               <img
                 className="w-full h-[40%] object-cover rounded-t-[10px]"
                 src={item.image}
@@ -248,9 +248,9 @@ export function TestSeries() {
         Test Series <span className="text-red-600"> Best Selling </span> Courses
       </h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12 gap-10 lg:my-[40px] ">
-        {TestSeriesCourses.map((item) => {
+        {TestSeriesCourses.map((item,index) => {
           return (
-            <div className="rounded-[10px] shadow-lg lg:h-[500px] h-auto">
+            <div key={index} className="rounded-[10px] shadow-lg lg:h-[500px] h-auto">
               <img
                 className="w-full h-[40%] object-cover rounded-t-[10px]"
                 src={item.image}
