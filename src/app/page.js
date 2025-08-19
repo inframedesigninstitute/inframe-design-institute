@@ -9,14 +9,14 @@ import TrustedPlatform from "./homePageComponents/TrustedPlatform";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="overflow-hidden w-full">
       <BannerSlider />
       <BookaSession />
+      <Facility />
       <TopCourses />
       <AppSection />
       <TrustedPlatform />
       <Testimonials />
-      <Facility />
       <StudyMaterials />
     </div>
   )

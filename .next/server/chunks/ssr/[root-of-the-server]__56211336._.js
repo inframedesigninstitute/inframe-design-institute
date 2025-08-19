@@ -214,70 +214,14 @@ function StudyMaterials() {
     }, this);
 }
 }),
-"[project]/src/app/homePageComponents/TopCourses.jsx [app-rsc] (client reference proxy) <module evaluation>": ((__turbopack_context__) => {
-"use strict";
-
-__turbopack_context__.s({
-    "OfflineCourses": ()=>OfflineCourses,
-    "OnlineCourses": ()=>OnlineCourses,
-    "StudyMaterial": ()=>StudyMaterial,
-    "TestSeries": ()=>TestSeries,
-    "default": ()=>__TURBOPACK__default__export__
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server.js [app-rsc] (ecmascript)");
-;
-const OfflineCourses = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
-    throw new Error("Attempted to call OfflineCourses() from the server but OfflineCourses is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
-}, "[project]/src/app/homePageComponents/TopCourses.jsx <module evaluation>", "OfflineCourses");
-const OnlineCourses = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
-    throw new Error("Attempted to call OnlineCourses() from the server but OnlineCourses is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
-}, "[project]/src/app/homePageComponents/TopCourses.jsx <module evaluation>", "OnlineCourses");
-const StudyMaterial = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
-    throw new Error("Attempted to call StudyMaterial() from the server but StudyMaterial is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
-}, "[project]/src/app/homePageComponents/TopCourses.jsx <module evaluation>", "StudyMaterial");
-const TestSeries = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
-    throw new Error("Attempted to call TestSeries() from the server but TestSeries is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
-}, "[project]/src/app/homePageComponents/TopCourses.jsx <module evaluation>", "TestSeries");
-const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
-    throw new Error("Attempted to call the default export of [project]/src/app/homePageComponents/TopCourses.jsx <module evaluation> from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
-}, "[project]/src/app/homePageComponents/TopCourses.jsx <module evaluation>", "default");
-}),
-"[project]/src/app/homePageComponents/TopCourses.jsx [app-rsc] (client reference proxy)": ((__turbopack_context__) => {
-"use strict";
-
-__turbopack_context__.s({
-    "OfflineCourses": ()=>OfflineCourses,
-    "OnlineCourses": ()=>OnlineCourses,
-    "StudyMaterial": ()=>StudyMaterial,
-    "TestSeries": ()=>TestSeries,
-    "default": ()=>__TURBOPACK__default__export__
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-server-dom-turbopack-server.js [app-rsc] (ecmascript)");
-;
-const OfflineCourses = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
-    throw new Error("Attempted to call OfflineCourses() from the server but OfflineCourses is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
-}, "[project]/src/app/homePageComponents/TopCourses.jsx", "OfflineCourses");
-const OnlineCourses = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
-    throw new Error("Attempted to call OnlineCourses() from the server but OnlineCourses is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
-}, "[project]/src/app/homePageComponents/TopCourses.jsx", "OnlineCourses");
-const StudyMaterial = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
-    throw new Error("Attempted to call StudyMaterial() from the server but StudyMaterial is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
-}, "[project]/src/app/homePageComponents/TopCourses.jsx", "StudyMaterial");
-const TestSeries = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
-    throw new Error("Attempted to call TestSeries() from the server but TestSeries is on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
-}, "[project]/src/app/homePageComponents/TopCourses.jsx", "TestSeries");
-const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$server$2d$dom$2d$turbopack$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerClientReference"])(function() {
-    throw new Error("Attempted to call the default export of [project]/src/app/homePageComponents/TopCourses.jsx from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.");
-}, "[project]/src/app/homePageComponents/TopCourses.jsx", "default");
-}),
 "[project]/src/app/homePageComponents/TopCourses.jsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
 
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$homePageComponents$2f$TopCourses$2e$jsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__$3c$module__evaluation$3e$__ = __turbopack_context__.i("[project]/src/app/homePageComponents/TopCourses.jsx [app-rsc] (client reference proxy) <module evaluation>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$homePageComponents$2f$TopCourses$2e$jsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__ = __turbopack_context__.i("[project]/src/app/homePageComponents/TopCourses.jsx [app-rsc] (client reference proxy)");
-;
-__turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$homePageComponents$2f$TopCourses$2e$jsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__);
-}),
+var { m: module, e: exports } = __turbopack_context__;
+{
+const e = new Error("Could not parse module '[project]/src/app/homePageComponents/TopCourses.jsx'\n\n'import', and 'export' cannot be used outside of module code");
+e.code = 'MODULE_UNPARSABLE';
+throw e;
+}}),
 "[project]/src/app/homePageComponents/Testimonials.jsx [app-rsc] (client reference proxy) <module evaluation>": ((__turbopack_context__) => {
 "use strict";
 
@@ -320,9 +264,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 function AppSection() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "w-full lg:p-0 p-3 lg:py-[30px] py-[30px] overflow-hidden",
+        className: "w-full lg:p-0 p-3 lg:py-[60px] py-[30px] overflow-hidden",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "max-w-[1120px] grid lg:grid-cols-[70%_auto] items-center mx-auto bg-gray-00 lg:p-10 p-5  rounded-[10px] ",
+            className: "max-w-[1320px] grid lg:grid-cols-[70%_auto] items-center mx-auto bg-gray-100 lg:p-10 p-5  rounded-[10px] ",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     children: [
@@ -462,7 +406,7 @@ function TrustedPlatform() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "w-full px-6 p-3",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "max-w-[1320px] mx-auto lg:py-[30px] py-[30px]",
+            className: "max-w-[1320px] mx-auto lg:py-[60px] py-[30px]",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                     className: "text-[35px] text-center font-bold",
@@ -489,10 +433,10 @@ function TrustedPlatform() {
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center'
                             },
-                            className: "w-full rounded-[10px] lg:rounded-[25px] flex h-[170] items-center justify-center relative overflow-hidden shadow-lg group transition-transform duration-500 hover:scale-[1.01]",
+                            className: "w-full rounded-[10px] lg:rounded-[25px] flex h-[300px] items-center justify-center relative overflow-hidden shadow-lg group transition-transform duration-500 hover:scale-[1.01]",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-transparent rounded-[10px] lg:rounded-[25px] z-10"
+                                    className: "absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent rounded-[10px] lg:rounded-[25px] z-10"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/homePageComponents/TrustedPlatform.jsx",
                                     lineNumber: 20,
@@ -502,7 +446,7 @@ function TrustedPlatform() {
                                     className: "z-40 ",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-center text-white font-semibold lg:text-[40px] text-[30px] mb-2",
+                                            className: "text-center text-white font-semibold lg:text-[40px] text-[50px] mb-2",
                                             children: item.heading
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/homePageComponents/TrustedPlatform.jsx",
@@ -639,4 +583,4 @@ module.exports = mod;
 
 };
 
-//# sourceMappingURL=%5Broot-of-the-server%5D__b004e0db._.js.map
+//# sourceMappingURL=%5Broot-of-the-server%5D__56211336._.js.map

@@ -20,7 +20,7 @@ export default function BannerSlider() {
   };
 
   return (
-    <div className="w-[100%] pb-10 overflow-hidden">
+    <div className="w-[100%] pb-10">
       <Slider {...settings}>
         <div>
           <img

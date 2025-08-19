@@ -5,92 +5,120 @@ import { FaGraduationCap, FaUser } from "react-icons/fa";
 
 export default function BookaSession() {
   return (
-    <div className="w-full lg:p-0 p-3">
-      <div className="max-w-[1320px] mx-auto lg:py-[60px] py-[30px]">
-        <div className="w-full p-[60px] grid lg:grid-cols-[60%_auto] gap-10 bg-white shadow-2xl">
-          <div className="px-5 py-4 rounded-[35px] lg:py-20 ">
-            <div className="flex items-center gap-3 lg:px-5 text-red-600">
-              <MdOutlineImportContacts className="text-[35px]" />
-              <h3 className=" font-semibold lg:text-[30px] text-[25px]">
-                Book a Counseling Session
-              </h3>
-            </div>
-            <div className="lg:p-5">
-              <ul>
-                <li className="my-[15px] text-[18px] text-gray-800 grid grid-cols-[5%_auto] items-center gap-5 ">
-                  <FaUser className="text-[22px]" /> Fill your details.
-                </li>
-                <li className="my-[15px] text-[18px] text-gray-800 grid grid-cols-[5%_auto] items-center gap-5 ">
-                  <MdLocalPhone className="text-[22px]" /> Our counselor will get
-                  in touch with you.
-                </li>
-                <li className="my-[15px] text-[18px] text-gray-800 grid grid-cols-[5%_auto] items-center gap-5 ">
-                  <FaGraduationCap className="text-[22px]" /> We will guide you
-                  through academic options, program details, and more.
-                </li>
-              </ul>
-            </div>
+    <div className="w-full bg-[#fff9f9] p-4 lg:p-10">
+      <div className="max-w-[1320px] mx-auto rounded-2xl bg-white shadow-md overflow-hidden grid lg:grid-cols-[60%_auto] grid-cols-1">
+        {/* Left Section */}
+        <div className="p-8 lg:p-12 flex flex-col justify-center space-y-6 bg-white">
+          <div className="flex items-center gap-3 text-red-600">
+            <MdOutlineImportContacts className="text-[32px]" />
+            <h3 className="text-[26px] lg:text-[30px] font-bold leading-tight text-gray-800">
+              Book Your Free Counseling Session
+            </h3>
           </div>
-          <form className="w-full bg-white p-8 rounded-[20px] shadow-2xl shadow-gray-400 space-y-5">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4 capitalize">
-              Please Fill All the details
-            </h2>
 
-            <div>
-              <label className="block text-gray-700 font-medium mb-1">
-                Name*
-              </label>
-              <input
-                type="text"
-                placeholder="Enter your name"
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-red-500 transition"
-              />
-            </div>
+          <p className="text-[16px] text-gray-600 leading-relaxed">
+            Not sure which creative career to pursue? Let's talk it out. Our expert
+            mentors will help you understand the best path forward based on your
+            passion and goals.
+          </p>
 
-            <div>
-              <label className="block text-gray-700 font-medium mb-1">
-                Email*
-              </label>
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-red-500 transition"
-              />
-            </div>
+          <ul className="space-y-4">
+            <li className="flex items-start gap-3 text-gray-700 text-[16px]">
+              <FaUser className="text-red-500 mt-1" />
+              Fill out a short form with your details.
+            </li>
+            <li className="flex items-start gap-3 text-gray-700 text-[16px]">
+              <MdLocalPhone className="text-red-500 mt-1" />
+              Get a call from our academic counselor within 24 hours.
+            </li>
+            <li className="flex items-start gap-3 text-gray-700 text-[16px]">
+              <FaGraduationCap className="text-red-500 mt-1" />
+              Receive personalized guidance on exams, programs, and colleges.
+            </li>
+          </ul>
 
-            <div>
-              <label className="block text-gray-700 font-medium mb-1">
-                Phone Number*
-              </label>
-              <input
-                type="tel"
-                placeholder="Enter your phone number"
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-red-500 transition"
-              />
-            </div>
+          {/* Callout or Highlight */}
+          <div className="bg-red-50 border-l-4 border-red-600 p-4 rounded-lg shadow-sm mt-4">
+            <p className="text-sm text-gray-700 font-medium">
+              🎯 9 out of 10 students say this session clarified their career direction.
+            </p>
+          </div>
 
-            <div>
-              <label className="block text-gray-700 font-medium mb-1">
-                Exam Type*
-              </label>
-              <select className="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-red-500 transition">
-                <option value="">Select Exam Type</option>
-                <option value="nift">NIFT</option>
-                <option value="nid">NID</option>
-                <option value="uceed">UCEED</option>
-                <option value="nata">NATA</option>
-              </select>
-            </div>
-
-            <button
-              type="submit"
-              className="w-full bg-red-600 hover:bg-gray-700 cursor-pointer text-white font-semibold py-3 px-6 rounded-lg transition duration-300 uppercase"
-            >
-              Send
-            </button>
-          </form>
+          {/* Assurance */}
+          <div className="text-[14px] text-gray-500 italic mt-2">
+            “I was confused between NID and UCEED — this call helped me decide clearly.” — Rhea, Design Aspirant
+          </div>
         </div>
 
+        {/* Right Section - Form */}
+        <form className="p-8 lg:p-12 bg-white space-y-6 flex flex-col justify-center">
+          <h2 className="text-2xl font-bold text-gray-800">
+            Fill in Your Details
+          </h2>
+
+          <div>
+            <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
+              Full Name*
+            </label>
+            <input
+              id="name"
+              type="text"
+              placeholder="John Doe"
+              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500 text-gray-800"
+              required
+            />
+          </div>
+
+          <div>
+            <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
+              Email Address*
+            </label>
+            <input
+              id="email"
+              type="email"
+              placeholder="john@example.com"
+              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500 text-gray-800"
+              required
+            />
+          </div>
+
+          <div>
+            <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">
+              Phone Number*
+            </label>
+            <input
+              id="phone"
+              type="tel"
+              placeholder="+91 98765 43210"
+              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500 text-gray-800"
+              required
+            />
+          </div>
+
+          <div>
+            <label htmlFor="exam" className="block text-gray-700 font-medium mb-2">
+              Exam Type*
+            </label>
+            <select
+              id="exam"
+              className="w-full border border-gray-300 rounded-lg px-4 py-3 bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-red-500"
+              required
+            >
+              <option value="">-- Select Exam Type --</option>
+              <option value="nift">NIFT</option>
+              <option value="nid">NID</option>
+              <option value="uceed">UCEED</option>
+              <option value="nata">NATA</option>
+            </select>
+          </div>
+
+          <button
+            type="submit"
+            className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 uppercase"
+          >
+            Book My Session
+          </button>
+        </form>
       </div>
     </div>
   );

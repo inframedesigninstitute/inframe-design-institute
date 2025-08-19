@@ -1,12 +1,16 @@
 "use client";
 import { FaIndianRupeeSign } from "react-icons/fa6";
+import 'swiper/css';
+import 'swiper/css/pagination';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 export default function TopCourses() {
-
-
   return (
     <div className="w-full lg:p-0 p-3">
-      <div className="max-w-[1320px] mx-auto lg:py-[60px] py-[30px]">
+      <div className="max-w-[1320px] mx-auto">
         <OnlineCourses />
         <OfflineCourses />
         <StudyMaterial />
@@ -17,6 +21,16 @@ export default function TopCourses() {
 }
 
 export function OnlineCourses() {
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
   let onlineCourses = [
     {
       title: "Interior Design Course",
@@ -44,45 +58,83 @@ export function OnlineCourses() {
     },
   ];
   return (
-    <div className="my-[80px] border-b-2 border-gray-300">
-      <h3 className="text-gray-900 font-bold text-[35px] lg:my-10 my-5">
+    <div className="my-[80px] lg:px-6">
+      <h3 className="text-gray-900 lg:text-start text-center font-bold text-[35px] lg:my-10 my-5">
         Online <span className="text-red-600"> Best Selling </span> Courses
       </h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12 gap-10 lg:my-[40px] ">
-        {onlineCourses.map((item,index) => {
-          return (
-            <div key={index} className="rounded-[10px] shadow-lg lg:h-[500px] h-auto">
-              <img
-                className="w-full h-[40%] object-cover rounded-t-[10px]"
-                src={item.image}
-                alt=""
-              />
-              <div className="p-6">
-                <h2 className="text-[23px] font-semibold mb-2">
-                  {item.title}
-                </h2>
-                <p className="text-gray-700">{item.description}</p>
-                <p className="text-[28px] mt-2 font-semibold flex items-center gap-1 text-gray-950">
-                  <FaIndianRupeeSign /> {item.price}/-
-                </p>
-                <div className="mt-4 grid grid-cols-2 gap-4">
-                  <button className="bg-gray-300 hover:bg-gray-600 cursor-pointer transition duration-300 py-[10px] rounded-lg hover:text-white font-medium">
-                    Add to Cart
-                  </button>
-                  <button className="bg-red-600 hover:bg-red-700 transition duration-300 cursor-pointer py-[10px] rounded-lg text-white font-medium">
-                    Buy Now
-                  </button>
+      <div className="lg:hidden">
+        <Slider {...sliderSettings}>
+          {onlineCourses.map((item, index) => (
+            <div key={index} className="px-2">
+              <div className="rounded-[10px] shadow-lg group overflow-hidden hover:shadow-xl">
+                <img
+                  className="w-full h-[250px] object-cover rounded-t-[10px]"
+                  src={item.image}
+                  alt=""
+                />
+                <div className="p-6">
+                  <h2 className="text-[23px] font-semibold mb-2">{item.title}</h2>
+                  <p className="text-gray-700">{item.description}</p>
+                  <p className="text-[28px] mt-2 font-semibold flex items-center gap-1 text-gray-950">
+                    <FaIndianRupeeSign /> {item.price}/-
+                  </p>
+                  <div className="mt-4 grid grid-cols-2 gap-4">
+                    <button className="bg-gray-300 hover:bg-gray-600 cursor-pointer transition duration-300 py-[10px] rounded-lg hover:text-white font-medium">
+                      Add to Cart
+                    </button>
+                    <button className="bg-red-600 hover:bg-red-700 transition duration-300 cursor-pointer py-[10px] rounded-lg text-white font-medium">
+                      Buy Now
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          );
-        })}
+          ))}
+        </Slider>
+      </div>
+
+      {/* Large screens: Grid */}
+      <div className="hidden lg:grid grid-cols-3 gap-12 my-[40px] ">
+        {onlineCourses.map((item, index) => (
+          <div key={index} className="rounded-[10px] shadow-lg group overflow-hidden hover:shadow-xl">
+            <img
+              className="w-full h-[200px] object-cover duration-300  group-hover:scale-[1.1] rounded-t-[10px]"
+              src={item.image}
+              alt=""
+            />
+            <div className="p-6">
+              <h2 className="text-[23px] font-semibold mb-2">{item.title}</h2>
+              <p className="text-gray-700">{item.description}</p>
+              <p className="text-[28px] mt-2 font-semibold flex items-center gap-1 text-gray-950">
+                <FaIndianRupeeSign /> {item.price}/-
+              </p>
+              <div className="mt-4 grid grid-cols-2 gap-4">
+                <button className="bg-gray-300 hover:bg-gray-600 cursor-pointer transition duration-300 py-[10px] rounded-lg hover:text-white font-medium">
+                  Add to Cart
+                </button>
+                <button className="bg-red-600 hover:bg-red-700 transition duration-300 cursor-pointer py-[10px] rounded-lg text-white font-medium">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   )
 }
 
 export function OfflineCourses() {
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
   let OfflineCourse = [
     {
       title: "Interior Design Course",
@@ -110,45 +162,83 @@ export function OfflineCourses() {
     },
   ];
   return (
-    <div className="my-[80px] border-b-2 border-gray-300">
-      <h3 className="text-gray-900 font-bold text-[35px] lg:my-10 my-5">
+    <div className="my-[80px] lg:px-6">
+      <h3 className="text-gray-900 lg:text-start text-center font-bold text-[35px] lg:my-10 my-5">
         Offline <span className="text-red-600"> Best Selling </span> Courses
       </h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12 gap-10 lg:my-[40px] ">
-        {OfflineCourse.map((item,index) => {
-          return (
-            <div key={index} className="rounded-[10px] shadow-lg lg:h-[500px] h-auto">
-              <img
-                className="w-full h-[40%] object-cover rounded-t-[10px]"
-                src={item.image}
-                alt=""
-              />
-              <div className="p-6">
-                <h2 className="text-[23px] font-semibold mb-2">
-                  {item.title}
-                </h2>
-                <p className="text-gray-700">{item.description}</p>
-                <p className="text-[28px] mt-2 font-semibold flex items-center gap-1 text-gray-950">
-                  <FaIndianRupeeSign /> {item.price}/-
-                </p>
-                <div className="mt-4 grid grid-cols-2 gap-4">
-                  <button className="bg-gray-300 hover:bg-gray-600 cursor-pointer transition duration-300 py-[10px] rounded-lg hover:text-white font-medium">
-                    Add to Cart
-                  </button>
-                  <button className="bg-red-600 hover:bg-red-700 transition duration-300 cursor-pointer py-[10px] rounded-lg text-white font-medium">
-                    Buy Now
-                  </button>
+      <div className="lg:hidden">
+        <Slider {...sliderSettings}>
+          {OfflineCourse.map((item, index) => (
+            <div key={index} className="px-2">
+              <div className="rounded-[10px] shadow-lg group overflow-hidden hover:shadow-xl">
+                <img
+                  className="w-full h-[250px] object-cover rounded-t-[10px]"
+                  src={item.image}
+                  alt=""
+                />
+                <div className="p-6">
+                  <h2 className="text-[23px] font-semibold mb-2">{item.title}</h2>
+                  <p className="text-gray-700">{item.description}</p>
+                  <p className="text-[28px] mt-2 font-semibold flex items-center gap-1 text-gray-950">
+                    <FaIndianRupeeSign /> {item.price}/-
+                  </p>
+                  <div className="mt-4 grid grid-cols-2 gap-4">
+                    <button className="bg-gray-300 hover:bg-gray-600 cursor-pointer transition duration-300 py-[10px] rounded-lg hover:text-white font-medium">
+                      Add to Cart
+                    </button>
+                    <button className="bg-red-600 hover:bg-red-700 transition duration-300 cursor-pointer py-[10px] rounded-lg text-white font-medium">
+                      Buy Now
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          );
-        })}
+          ))}
+        </Slider>
+      </div>
+
+      {/* Large screens: Grid */}
+      <div className="hidden lg:grid grid-cols-3 gap-12 my-[40px]">
+        {OfflineCourse.map((item, index) => (
+          <div key={index} className="rounded-[10px] shadow-lg group overflow-hidden hover:shadow-xl">
+            <img
+              className="w-full h-[200px] object-cover duration-300  group-hover:scale-[1.1] rounded-t-[10px]"
+              src={item.image}
+              alt=""
+            />
+            <div className="p-6">
+              <h2 className="text-[23px] font-semibold mb-2">{item.title}</h2>
+              <p className="text-gray-700">{item.description}</p>
+              <p className="text-[28px] mt-2 font-semibold flex items-center gap-1 text-gray-950">
+                <FaIndianRupeeSign /> {item.price}/-
+              </p>
+              <div className="mt-4 grid grid-cols-2 gap-4">
+                <button className="bg-gray-300 hover:bg-gray-600 cursor-pointer transition duration-300 py-[10px] rounded-lg hover:text-white font-medium">
+                  Add to Cart
+                </button>
+                <button className="bg-red-600 hover:bg-red-700 transition duration-300 cursor-pointer py-[10px] rounded-lg text-white font-medium">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   )
 }
 
 export function StudyMaterial() {
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
   let studyMaterialCourses = [
     {
       title: "Interior Design Course",
@@ -176,45 +266,83 @@ export function StudyMaterial() {
     },
   ];
   return (
-    <div className="my-[80px] border-b-2 border-gray-300">
-      <h3 className="text-gray-900 font-bold text-[35px] lg:my-10 my-5">
-        Study Material <span className="text-red-600"> Best Selling </span> Courses
+    <div className="my-[80px] lg:px-6">
+      <h3 className="text-gray-900 lg:text-start text-center font-bold text-[35px] lg:my-10 my-5">
+        Offline <span className="text-red-600"> Best Selling </span> Courses
       </h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12 gap-10 lg:my-[40px] ">
-        {studyMaterialCourses.map((item,index) => {
-          return (
-            <div key={index} className="rounded-[10px] shadow-lg lg:h-[500px] h-auto">
-              <img
-                className="w-full h-[40%] object-cover rounded-t-[10px]"
-                src={item.image}
-                alt=""
-              />
-              <div className="p-6">
-                <h2 className="text-[23px] font-semibold mb-2">
-                  {item.title}
-                </h2>
-                <p className="text-gray-700">{item.description}</p>
-                <p className="text-[28px] mt-2 font-semibold flex items-center gap-1 text-gray-950">
-                  <FaIndianRupeeSign /> {item.price}/-
-                </p>
-                <div className="mt-4 grid grid-cols-2 gap-4">
-                  <button className="bg-gray-300 hover:bg-gray-600 cursor-pointer transition duration-300 py-[10px] rounded-lg hover:text-white font-medium">
-                    Add to Cart
-                  </button>
-                  <button className="bg-red-600 hover:bg-red-700 transition duration-300 cursor-pointer py-[10px] rounded-lg text-white font-medium">
-                    Buy Now
-                  </button>
+      <div className="lg:hidden">
+        <Slider {...sliderSettings}>
+          {studyMaterialCourses.map((item, index) => (
+            <div key={index} className="px-2">
+              <div className="rounded-[10px] shadow-lg group overflow-hidden hover:shadow-xl">
+                <img
+                  className="w-full h-[250px] object-cover rounded-t-[10px]"
+                  src={item.image}
+                  alt=""
+                />
+                <div className="p-6">
+                  <h2 className="text-[23px] font-semibold mb-2">{item.title}</h2>
+                  <p className="text-gray-700">{item.description}</p>
+                  <p className="text-[28px] mt-2 font-semibold flex items-center gap-1 text-gray-950">
+                    <FaIndianRupeeSign /> {item.price}/-
+                  </p>
+                  <div className="mt-4 grid grid-cols-2 gap-4">
+                    <button className="bg-gray-300 hover:bg-gray-600 cursor-pointer transition duration-300 py-[10px] rounded-lg hover:text-white font-medium">
+                      Add to Cart
+                    </button>
+                    <button className="bg-red-600 hover:bg-red-700 transition duration-300 cursor-pointer py-[10px] rounded-lg text-white font-medium">
+                      Buy Now
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          );
-        })}
+          ))}
+        </Slider>
+      </div>
+
+      {/* Large screens: Grid */}
+      <div className="hidden lg:grid grid-cols-3 gap-12 my-[40px]">
+        {studyMaterialCourses.map((item, index) => (
+          <div key={index} className="rounded-[10px] shadow-lg group overflow-hidden hover:shadow-xl">
+            <img
+              className="w-full h-[200px] object-cover duration-300  group-hover:scale-[1.1] rounded-t-[10px]"
+              src={item.image}
+              alt=""
+            />
+            <div className="p-6">
+              <h2 className="text-[23px] font-semibold mb-2">{item.title}</h2>
+              <p className="text-gray-700">{item.description}</p>
+              <p className="text-[28px] mt-2 font-semibold flex items-center gap-1 text-gray-950">
+                <FaIndianRupeeSign /> {item.price}/-
+              </p>
+              <div className="mt-4 grid grid-cols-2 gap-4">
+                <button className="bg-gray-300 hover:bg-gray-600 cursor-pointer transition duration-300 py-[10px] rounded-lg hover:text-white font-medium">
+                  Add to Cart
+                </button>
+                <button className="bg-red-600 hover:bg-red-700 transition duration-300 cursor-pointer py-[10px] rounded-lg text-white font-medium">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   )
 }
 
 export function TestSeries() {
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
   let TestSeriesCourses = [
     {
       title: "Interior Design Course",
@@ -243,39 +371,67 @@ export function TestSeries() {
   ];
 
   return (
-    <div className="my-[80px] border-b-2 border-gray-300">
-      <h3 className="text-gray-900 font-bold text-[35px] lg:my-10 my-5">
+    <div className="my-[80px] lg:px-6">
+      <h3 className="text-gray-900 lg:text-start text-center font-bold text-[35px] lg:my-10 my-5">
         Test Series <span className="text-red-600"> Best Selling </span> Courses
       </h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12 gap-10 lg:my-[40px] ">
-        {TestSeriesCourses.map((item,index) => {
-          return (
-            <div key={index} className="rounded-[10px] shadow-lg lg:h-[500px] h-auto">
-              <img
-                className="w-full h-[40%] object-cover rounded-t-[10px]"
-                src={item.image}
-                alt=""
-              />
-              <div className="p-6">
-                <h2 className="text-[23px] font-semibold mb-2">
-                  {item.title}
-                </h2>
-                <p className="text-gray-700">{item.description}</p>
-                <p className="text-[28px] mt-2 font-semibold flex items-center gap-1 text-gray-950">
-                  <FaIndianRupeeSign /> {item.price}/-
-                </p>
-                <div className="mt-4 grid grid-cols-2 gap-4">
-                  <button className="bg-gray-300 hover:bg-gray-600 cursor-pointer transition duration-300 py-[10px] rounded-lg hover:text-white font-medium">
-                    Add to Cart
-                  </button>
-                  <button className="bg-red-600 hover:bg-red-700 transition duration-300 cursor-pointer py-[10px] rounded-lg text-white font-medium">
-                    Buy Now
-                  </button>
+      <div className="lg:hidden">
+        <Slider {...sliderSettings}>
+          {TestSeriesCourses.map((item, index) => (
+            <div key={index} className="px-2">
+              <div className="rounded-[10px] shadow-lg group overflow-hidden hover:shadow-xl">
+                <img
+                  className="w-full h-[250px] object-cover rounded-t-[10px]"
+                  src={item.image}
+                  alt=""
+                />
+                <div className="p-6">
+                  <h2 className="text-[23px] font-semibold mb-2">{item.title}</h2>
+                  <p className="text-gray-700">{item.description}</p>
+                  <p className="text-[28px] mt-2 font-semibold flex items-center gap-1 text-gray-950">
+                    <FaIndianRupeeSign /> {item.price}/-
+                  </p>
+                  <div className="mt-4 grid grid-cols-2 gap-4">
+                    <button className="bg-gray-300 hover:bg-gray-600 cursor-pointer transition duration-300 py-[10px] rounded-lg hover:text-white font-medium">
+                      Add to Cart
+                    </button>
+                    <button className="bg-red-600 hover:bg-red-700 transition duration-300 cursor-pointer py-[10px] rounded-lg text-white font-medium">
+                      Buy Now
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          );
-        })}
+          ))}
+        </Slider>
+      </div>
+
+      {/* Large screens: Grid */}
+      <div className="hidden lg:grid grid-cols-3 gap-12 my-[40px]">
+        {TestSeriesCourses.map((item, index) => (
+          <div key={index} className="rounded-[10px] shadow-lg group overflow-hidden hover:shadow-xl">
+            <img
+              className="w-full h-[200px] object-cover duration-300  group-hover:scale-[1.1] rounded-t-[10px]"
+              src={item.image}
+              alt=""
+            />
+            <div className="p-6">
+              <h2 className="text-[23px] font-semibold mb-2">{item.title}</h2>
+              <p className="text-gray-700">{item.description}</p>
+              <p className="text-[28px] mt-2 font-semibold flex items-center gap-1 text-gray-950">
+                <FaIndianRupeeSign /> {item.price}/-
+              </p>
+              <div className="mt-4 grid grid-cols-2 gap-4">
+                <button className="bg-gray-300 hover:bg-gray-600 cursor-pointer transition duration-300 py-[10px] rounded-lg hover:text-white font-medium">
+                  Add to Cart
+                </button>
+                <button className="bg-red-600 hover:bg-red-700 transition duration-300 cursor-pointer py-[10px] rounded-lg text-white font-medium">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   )

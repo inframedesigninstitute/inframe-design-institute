@@ -25,7 +25,7 @@ export default function Header() {
         <UserControl activePage={activePage} setActivePage={setActivePage} />
       )}
       {/* header for pc */}
-      <div className="w-full shadow-lg z-[100] lg:block hidden ">
+      <div className="w-full shadow-lg z-[100] lg:block hidden px-6">
         <div className="max-w-[1320px] mx-auto flex items-center justify-between py-[0px]">
           <div className="flex items-center gap-5">
             <img
@@ -364,7 +364,10 @@ export default function Header() {
             </ul>
 
             <button
-              onClick={() => setActivePage("login")}
+              onClick={() => {
+                setActivePage("login")
+                setMegaMenuOpen(false)
+              }}
               className="bg-red-600  duration-300 cursor-pointer px-[25px] rounded-[10px] hover:bg-gray-700 py-[10px] text-white  text-[16px]"
             >
               Login / Register
@@ -390,7 +393,10 @@ export default function Header() {
             />
           </div>
           <button
-            onClick={() => setActivePage("login")}
+            onClick={() => {
+              setActivePage("login")
+              setMegaMenuOpen(false)
+            }}
             className="bg-red-600 hover:bg-red-500 duration-300 cursor-pointer px-[25px] rounded-[10px] py-[5px] text-white text-[16px]"
           >
             Login
@@ -414,28 +420,29 @@ export default function Header() {
             </button>
           </div>
           <ul className="px-3">
-            <li className="my-[35px] text-[22px] border-b-[1px] border-gray-400 pb-2 flex items-center gap-1 justify-between">
+            <li className="my-[35px] text-[22px] border-b-[1px] border-gray-100 pb-2 flex items-center gap-1 justify-between">
               All Courses <FaAngleRight />
             </li>
-            <li className="my-[35px] text-[22px] border-b-[1px] border-gray-400 pb-2">
+            <li className="my-[35px] text-[22px] border-b-[1px] border-gray-100 pb-2">
               Online Courses
             </li>
-            <li className="my-[35px] text-[22px] border-b-[1px] border-gray-400 pb-2">
+            <li className="my-[35px] text-[22px] border-b-[1px] border-gray-100 pb-2">
               Offline Courses
             </li>
-            <li className="my-[35px] text-[22px] border-b-[1px] border-gray-400 pb-2">
+            <li className="my-[35px] text-[22px] border-b-[1px] border-gray-100 pb-2">
               Study Materials
             </li>
-            <li className="my-[35px] text-[22px] border-b-[1px] border-gray-400 pb-2">
+            <li className="my-[35px] text-[22px] border-b-[1px] border-gray-100 pb-2">
               Free Resources
             </li>
-            <li className="my-[35px] text-[22px] border-b-[1px] border-gray-400 pb-2">
+            <li className="my-[35px] text-[22px] border-b-[1px] border-gray-100 pb-2">
               Test Series
             </li>
             <button
               onClick={() => {
                 setActivePage("login");
                 setMobileMenu(false);
+                setMegaMenuOpen(false)
               }}
               className="w-full bg-red-600 hover:bg-gray-900 duration-300 text-white rounded-[10px] py-[10px] text-[22px]"
             >

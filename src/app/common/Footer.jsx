@@ -203,7 +203,7 @@ export default function Footer() {
         </ul>
       </div>
 
-      <p className="bg-red-600 text-[14px] text-center py-[20px] text-white">
+      <p className="bg-red-800 text-[14px] text-center py-[20px] text-white">
         © Copyrights 2013 - 2025 IDI Jodhpur. All Rights Reserved
       </p>
     </div>

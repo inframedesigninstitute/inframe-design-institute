@@ -36,7 +36,7 @@ function Course() {
                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         className: "bg-gray-300 hover:bg-red-500 duration-300 hover:text-white w-[200px] py-3 rounded-[5px] cursor-pointer",
                         children: item
-                    }, void 0, false, {
+                    }, index, false, {
                         fileName: "[project]/src/app/course/page.js",
                         lineNumber: 16,
                         columnNumber: 29
