@@ -38,7 +38,7 @@ export default function Testimonials() {
 
     return (
         <div className="w-full lg:p-0 p-5">
-            <div className="max-w-[1320px] mx-auto lg:py-[60px] py-[40px]">
+            <div className="max-w-[1320px] mx-auto lg:py-[30px] py-[20px]">
                 <h3 className="text-[35px] font-extrabold text-gray-900 mb-12 text-center">
                     Happy Student <span className="text-red-600">Testimonials</span>
                 </h3>

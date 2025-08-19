@@ -6,7 +6,7 @@ import { MdEmail } from "react-icons/md";
 export default function Footer() {
   return (
     <div className="w-full bg-gray-200 lg:mt-[60px] mt-[30px]">
-      <div className="max-w-[1320px] mx-auto grid lg:grid-cols-4 grid-cols-1 p-3 lg:gap-15 gap-5 py-[30px]">
+      <div className="max-w-[1320px] mx-auto grid lg:grid-cols-4 grid-cols-1 px-6 lg:gap-15 gap-5 py-[30px]">
         <div>
           <img
             className="w-[180px] object-cover"
@@ -203,7 +203,7 @@ export default function Footer() {
         </ul>
       </div>
 
-      <p className="bg-red-800 text-[14px] text-center py-[20px] text-white">
+      <p className="bg-red-800 text-[16px] text-center py-[20px] text-white">
         © Copyrights 2013 - 2025 IDI Jodhpur. All Rights Reserved
       </p>
     </div>
