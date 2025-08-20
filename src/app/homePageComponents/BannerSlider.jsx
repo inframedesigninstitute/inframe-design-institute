@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { FaPhone, FaPhoneAlt, FaUserAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaUserAlt } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 
 export default function BannerSlider() {
@@ -22,25 +22,31 @@ export default function BannerSlider() {
   return (
     <div className="w-[100%] pb-10">
       <Slider {...settings}>
-        <div>
+        <div
+          className="w-[100%] h-[80vh] bg-cover bg-center"
+          style={{ backgroundImage: 'url("/bannerImages/games.jpg")' }}
+        >
           <img
-            className="w-[100%] lg:h-[80vh] object-cover "
-            src="https://graphicsfamily.com/wp-content/uploads/edd/2022/06/Free-Red-Sale-Banner-Design-1-870x489.jpg"
-            alt=""
+            className="w-[100%] h-[100%]"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIKMwmbWItxl4Y_q1ofmYMJNVrWiN9b5Yaqg&s"
           />
         </div>
-        <div>
+        <div
+          className="w-[100%] h-[80vh] bg-cover bg-center"
+          style={{ backgroundImage: 'url("/bannerImages/games.jpg")' }}
+        >
           <img
-            className="w-[100%] lg:h-[80vh] object-cover "
-            src="https://graphicsfamily.com/wp-content/uploads/edd/2022/06/Free-Red-Sale-Banner-Design-1-870x489.jpg"
-            alt=""
+            className="w-[100%] h-[100%]"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIKMwmbWItxl4Y_q1ofmYMJNVrWiN9b5Yaqg&s"
           />
         </div>
-        <div>
+        <div
+          className="w-[100%] h-[80vh] bg-cover bg-center"
+          style={{ backgroundImage: 'url("/bannerImages/games.jpg")' }}
+        >
           <img
-            className="w-[100%] lg:h-[80vh] object-cover "
-            src="https://graphicsfamily.com/wp-content/uploads/edd/2022/06/Free-Red-Sale-Banner-Design-1-870x489.jpg"
-            alt=""
+            className="w-[100%] h-[100%]"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIKMwmbWItxl4Y_q1ofmYMJNVrWiN9b5Yaqg&s"
           />
         </div>
       </Slider>

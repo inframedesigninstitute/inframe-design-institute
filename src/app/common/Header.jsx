@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   FaAngleRight,
   FaChevronDown,
@@ -29,8 +29,8 @@ export default function Header() {
         <div className="max-w-[1320px] mx-auto flex items-center justify-between py-[0px]">
           <div className="flex items-center gap-5">
             <img
-              className="w-[160px] object-cover"
-              src="https://inframestudios.co.nz/wp-content/uploads/2025/01/Copy-of-Original-size-inframe-studios-removebg-preview-removebg-preview.png"
+              className="w-[160px] h-[100] object-cover"
+              src="/logo.jpg"
               alt=""
             />
             <button onClick={() => setMegaMenuOpen(!MegaMenuOpen)} className=" flex items-center  gap-2 border-[2px] border-red-600 rounded-[10px] px-[15px] py-[8px] text-red-600 bg-white hover:bg-red-600 hover:text-white  cursor-pointer hover:border-transparent font-semibold duration-300">

@@ -5,12 +5,12 @@ import { MdEmail } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <div className="w-full bg-gray-200 lg:mt-[60px] mt-[30px]">
+    <div className="w-full bg-[#DBDBDB]  lg:mt-[60px] mt-[30px]">
       <div className="max-w-[1320px] mx-auto grid lg:grid-cols-4 grid-cols-1 px-6 lg:gap-15 gap-5 py-[30px]">
         <div>
           <img
-            className="w-[180px] object-cover"
-            src="https://inframestudios.co.nz/wp-content/uploads/2025/01/Copy-of-Original-size-inframe-studios-removebg-preview-removebg-preview.png"
+            className="w-[200px] h-[100] object-cover"
+            src="/logoimage.png"
             alt=""
           />
           <p className="my-[25px] text-gray-600 ">

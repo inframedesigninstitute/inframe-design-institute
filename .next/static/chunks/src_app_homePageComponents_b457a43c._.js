@@ -41,13 +41,16 @@ function BannerSlider() {
                 ...settings,
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "w-[100%] h-[80vh] bg-cover bg-center",
+                        style: {
+                            backgroundImage: 'url("/bannerImages/games.jpg")'
+                        },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                            className: "w-[100%] lg:h-[80vh] object-cover ",
-                            src: "https://graphicsfamily.com/wp-content/uploads/edd/2022/06/Free-Red-Sale-Banner-Design-1-870x489.jpg",
-                            alt: ""
+                            className: "w-[100%] h-[100%]",
+                            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIKMwmbWItxl4Y_q1ofmYMJNVrWiN9b5Yaqg&s"
                         }, void 0, false, {
                             fileName: "[project]/src/app/homePageComponents/BannerSlider.jsx",
-                            lineNumber: 26,
+                            lineNumber: 29,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
@@ -56,33 +59,39 @@ function BannerSlider() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "w-[100%] h-[80vh] bg-cover bg-center",
+                        style: {
+                            backgroundImage: 'url("/bannerImages/games.jpg")'
+                        },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                            className: "w-[100%] lg:h-[80vh] object-cover ",
-                            src: "https://graphicsfamily.com/wp-content/uploads/edd/2022/06/Free-Red-Sale-Banner-Design-1-870x489.jpg",
-                            alt: ""
+                            className: "w-[100%] h-[100%]",
+                            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIKMwmbWItxl4Y_q1ofmYMJNVrWiN9b5Yaqg&s"
                         }, void 0, false, {
                             fileName: "[project]/src/app/homePageComponents/BannerSlider.jsx",
-                            lineNumber: 33,
+                            lineNumber: 38,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/BannerSlider.jsx",
-                        lineNumber: 32,
+                        lineNumber: 34,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "w-[100%] h-[80vh] bg-cover bg-center",
+                        style: {
+                            backgroundImage: 'url("/bannerImages/games.jpg")'
+                        },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                            className: "w-[100%] lg:h-[80vh] object-cover ",
-                            src: "https://graphicsfamily.com/wp-content/uploads/edd/2022/06/Free-Red-Sale-Banner-Design-1-870x489.jpg",
-                            alt: ""
+                            className: "w-[100%] h-[100%]",
+                            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIKMwmbWItxl4Y_q1ofmYMJNVrWiN9b5Yaqg&s"
                         }, void 0, false, {
                             fileName: "[project]/src/app/homePageComponents/BannerSlider.jsx",
-                            lineNumber: 40,
+                            lineNumber: 47,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/BannerSlider.jsx",
-                        lineNumber: 39,
+                        lineNumber: 43,
                         columnNumber: 9
                     }, this)
                 ]
@@ -96,16 +105,16 @@ function BannerSlider() {
                 className: "".concat(contactModel ? "rotate-180 " : "rotate-0", " fixed cursor-pointer top-[88%] right-[25px] z-[110] text-[28px] hover:bg-gray-700 bg-red-500 text-white rounded-full lg:p-4 p-3 transition-all ease-initial duration-400"),
                 children: contactModel ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$io$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["IoMdClose"], {}, void 0, false, {
                     fileName: "[project]/src/app/homePageComponents/BannerSlider.jsx",
-                    lineNumber: 52,
+                    lineNumber: 58,
                     columnNumber: 25
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaPhoneAlt"], {}, void 0, false, {
                     fileName: "[project]/src/app/homePageComponents/BannerSlider.jsx",
-                    lineNumber: 52,
+                    lineNumber: 58,
                     columnNumber: 41
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/homePageComponents/BannerSlider.jsx",
-                lineNumber: 47,
+                lineNumber: 53,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -118,14 +127,14 @@ function BannerSlider() {
                                 className: "text-[16px]"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/homePageComponents/BannerSlider.jsx",
-                                lineNumber: 59,
+                                lineNumber: 65,
                                 columnNumber: 11
                             }, this),
                             " Talk to a counsellor"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/homePageComponents/BannerSlider.jsx",
-                        lineNumber: 58,
+                        lineNumber: 64,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -133,7 +142,7 @@ function BannerSlider() {
                         children: "Have doubts? Our support team will be happy to assist you !"
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/BannerSlider.jsx",
-                        lineNumber: 61,
+                        lineNumber: 67,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -141,13 +150,13 @@ function BannerSlider() {
                         children: "+91 807531251"
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/BannerSlider.jsx",
-                        lineNumber: 64,
+                        lineNumber: 70,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/homePageComponents/BannerSlider.jsx",
-                lineNumber: 54,
+                lineNumber: 60,
                 columnNumber: 7
             }, this)
         ]

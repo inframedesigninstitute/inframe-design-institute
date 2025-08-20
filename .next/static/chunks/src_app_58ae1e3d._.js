@@ -324,9 +324,9 @@ function MegaMenu(param) {
     //group-hover:visible invisible scale-y-0 group-hover:scale-y-100 
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         onClick: (e)=>e.stopPropagation(),
-        className: "".concat(MegaMenuOpen ? 'visible scale-y-100 opacity-100' : 'invisible scale-y-0 opacity-80', " absolute duration-400 transition-all ease-in-out top-[100%] \n        left-[170px] bg-white shadow-2xl rounded-b-[15px] w-[900px] origin-top h-[auto] z-[100]\n         p-5 lg:block hidden text-gray-900"),
+        className: "".concat(MegaMenuOpen ? ' translate-y-0 opacity-100' : ' -translate-y-10 opacity-0', " absolute duration-400 transition-all ease-in-out top-[100%] \n        left-[170px] bg-white shadow-2xl rounded-b-[15px] w-[900px] origin-top h-[auto] z-[100]\n         p-5 lg:block hidden text-gray-900"),
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "grid grid-cols-[30%_auto] gap-5",
+            className: "grid grid-cols-[25%_auto] gap-5",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "border-0",
@@ -334,7 +334,7 @@ function MegaMenu(param) {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 onClick: ()=>setActiveTab('onlineCourse'),
-                                className: "text-start text-[18px] my-[25px] py-[15px] px-3 rounded-[10px] duration-500 hover:bg-gray-200 relative group",
+                                className: "text-start text-[18px] mb-[10px] py-[10px] px-3 rounded-[10px] duration-500 hover:bg-gray-200 relative group",
                                 children: "Online Course"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
@@ -343,7 +343,7 @@ function MegaMenu(param) {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 onClick: ()=>setActiveTab('offlineCourse'),
-                                className: "text-start text-[18px] my-[25px] py-[15px] px-3 rounded-[10px] duration-500 hover:bg-gray-200 ",
+                                className: "text-start text-[18px] mb-[10px] py-[10px] px-3 rounded-[10px] duration-500 hover:bg-gray-200 ",
                                 children: "Offline Course"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
@@ -352,7 +352,7 @@ function MegaMenu(param) {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 onClick: ()=>setActiveTab('studyMaterial'),
-                                className: "text-start text-[18px] my-[25px] py-[15px] px-3 rounded-[10px] duration-500 hover:bg-gray-200 ",
+                                className: "text-start text-[18px] mb-[10px] py-[10px] px-3 rounded-[10px] duration-500 hover:bg-gray-200 ",
                                 children: "Study Material"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
@@ -361,7 +361,7 @@ function MegaMenu(param) {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 onClick: ()=>setActiveTab('testSeries'),
-                                className: "text-start text-[18px] my-[25px] py-[15px] px-3 rounded-[10px] duration-500 hover:bg-gray-200 ",
+                                className: "text-start text-[18px] mb-[10px] py-[10px] px-3 rounded-[10px] duration-500 hover:bg-gray-200 ",
                                 children: "Test Series"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
@@ -370,7 +370,7 @@ function MegaMenu(param) {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 onClick: ()=>setActiveTab('freeRes'),
-                                className: "text-start text-[18px] my-[25px] py-[15px] px-3 rounded-[10px] duration-500 hover:bg-gray-200 ",
+                                className: "text-start text-[18px] mb-[10px] py-[10px] px-3 rounded-[10px] duration-500 hover:bg-gray-200 ",
                                 children: "Free Resources"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
@@ -389,7 +389,7 @@ function MegaMenu(param) {
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "h-[700px] overflow-y-scroll",
+                    className: "h-[600px] overflow-y-scroll",
                     children: [
                         activeTab === 'onlineCourse' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(OnlineCourse, {
                             setMegaMenuOpen: setMegaMenuOpen
@@ -453,144 +453,189 @@ function OnlineCourse(param) {
         'graphic Course',
         'Interior Course',
         'Design Course',
+        'Design Course',
+        'Interior Course',
+        'Design Course',
+        'Design Course',
+        'Interior Course',
+        'Design Course',
         'Design Course'
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "p-5",
+        className: "p-0",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full h-auto mb-10 origin-top transition-all ease-in-out duration-400 ",
+                className: "w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         className: "border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]",
                         children: "UG Exams"
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 46,
+                        lineNumber: 52,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-3 gap-7 mt-5 w-full",
+                        className: "grid grid-cols-4 gap-5 mt-5 w-full",
                         children: ugCourse.map((item, index)=>{
                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/course/".concat(item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-'), "-online"),
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>setMegaMenuOpen(false),
-                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[12px] cursor-pointer text-[15px] py-[13px] ",
+                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ",
                                     children: item
                                 }, index, false, {
                                     fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                    lineNumber: 50,
+                                    lineNumber: 56,
                                     columnNumber: 111
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                lineNumber: 50,
+                                lineNumber: 56,
                                 columnNumber: 29
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 47,
+                        lineNumber: 53,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                lineNumber: 45,
+                lineNumber: 51,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full h-auto mb-10 origin-top transition-all ease-in-out duration-400 ",
+                className: "w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         className: "border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]",
                         children: "UG Exams"
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 56,
+                        lineNumber: 62,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-3 gap-7 mt-5 w-full",
+                        className: "grid grid-cols-4 gap-5 mt-5 w-full",
                         children: ugCourse.map((item, index)=>{
                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/course/".concat(item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-'), "-online"),
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>setMegaMenuOpen(false),
-                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[12px] cursor-pointer text-[15px] py-[13px] ",
+                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ",
                                     children: item
                                 }, index, false, {
                                     fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                    lineNumber: 60,
+                                    lineNumber: 66,
                                     columnNumber: 111
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                lineNumber: 60,
+                                lineNumber: 66,
                                 columnNumber: 29
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 57,
+                        lineNumber: 63,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                lineNumber: 55,
+                lineNumber: 61,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full h-auto mb-10 origin-top transition-all ease-in-out duration-400 ",
+                className: "w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         className: "border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]",
                         children: "UG Exams"
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 66,
+                        lineNumber: 72,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-3 gap-7 mt-5 w-full",
+                        className: "grid grid-cols-4 gap-5 mt-5 w-full",
                         children: ugCourse.map((item, index)=>{
                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/course/".concat(item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-'), "-online"),
-                                children: [
-                                    " ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        onClick: ()=>setMegaMenuOpen(false),
-                                        className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[12px] cursor-pointer text-[15px] py-[13px] ",
-                                        children: item
-                                    }, index, false, {
-                                        fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                        lineNumber: 70,
-                                        columnNumber: 112
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>setMegaMenuOpen(false),
+                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ",
+                                    children: item
+                                }, index, false, {
+                                    fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                                    lineNumber: 76,
+                                    columnNumber: 111
+                                }, this)
+                            }, void 0, false, {
                                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                lineNumber: 70,
+                                lineNumber: 76,
                                 columnNumber: 29
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 67,
+                        lineNumber: 73,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                lineNumber: 65,
+                lineNumber: 71,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                        className: "border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]",
+                        children: "UG Exams"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                        lineNumber: 82,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid grid-cols-4 gap-5 mt-5 w-full",
+                        children: ugCourse.map((item, index)=>{
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: "/course/".concat(item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-'), "-online"),
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>setMegaMenuOpen(false),
+                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ",
+                                    children: item
+                                }, index, false, {
+                                    fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                                    lineNumber: 86,
+                                    columnNumber: 111
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                                lineNumber: 86,
+                                columnNumber: 29
+                            }, this);
+                        })
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                        lineNumber: 83,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                lineNumber: 81,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-        lineNumber: 44,
+        lineNumber: 50,
         columnNumber: 9
     }, this);
 }
@@ -604,138 +649,180 @@ function OfflineCourse(param) {
         'Design Course'
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "p-5",
+        className: "p-0",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full h-auto mb-10 origin-top transition-all ease-in-out duration-400 ",
+                className: "w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         className: "border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]",
                         children: "UG Exams"
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 89,
+                        lineNumber: 105,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-3 gap-7 mt-5 w-full",
+                        className: "grid grid-cols-4 gap-5 mt-5 w-full",
                         children: ugCourse.map((item, index)=>{
                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                href: "/course/".concat(item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-'), "-offline"),
+                                href: "/course/".concat(item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-'), "-online"),
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>setMegaMenuOpen(false),
-                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[12px] cursor-pointer text-[15px] py-[13px] ",
+                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ",
                                     children: item
                                 }, index, false, {
                                     fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                    lineNumber: 93,
-                                    columnNumber: 112
+                                    lineNumber: 109,
+                                    columnNumber: 111
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                lineNumber: 93,
+                                lineNumber: 109,
                                 columnNumber: 29
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 90,
+                        lineNumber: 106,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                lineNumber: 88,
+                lineNumber: 104,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full h-auto mb-10 origin-top transition-all ease-in-out duration-400 ",
+                className: "w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         className: "border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]",
-                        children: "PG Exams"
+                        children: "UG Exams"
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 99,
+                        lineNumber: 115,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-3 gap-7 mt-5 w-full",
+                        className: "grid grid-cols-4 gap-5 mt-5 w-full",
                         children: ugCourse.map((item, index)=>{
                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                href: "/course/".concat(item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-'), "-offline"),
+                                href: "/course/".concat(item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-'), "-online"),
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>setMegaMenuOpen(false),
-                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[12px] cursor-pointer text-[15px] py-[13px] ",
+                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ",
                                     children: item
                                 }, index, false, {
                                     fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                    lineNumber: 103,
-                                    columnNumber: 112
+                                    lineNumber: 119,
+                                    columnNumber: 111
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                lineNumber: 103,
+                                lineNumber: 119,
                                 columnNumber: 29
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 100,
+                        lineNumber: 116,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                lineNumber: 98,
+                lineNumber: 114,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full h-auto mb-10 origin-top transition-all ease-in-out duration-400 ",
+                className: "w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         className: "border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]",
-                        children: "Short Courses"
+                        children: "UG Exams"
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 109,
+                        lineNumber: 125,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-3 gap-7 mt-5 w-full",
+                        className: "grid grid-cols-4 gap-5 mt-5 w-full",
                         children: ugCourse.map((item, index)=>{
                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                href: "/course/".concat(item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-'), "-offline"),
+                                href: "/course/".concat(item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-'), "-online"),
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>setMegaMenuOpen(false),
-                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[12px] cursor-pointer text-[15px] py-[13px] ",
+                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ",
                                     children: item
                                 }, index, false, {
                                     fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                    lineNumber: 113,
-                                    columnNumber: 112
+                                    lineNumber: 129,
+                                    columnNumber: 111
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                lineNumber: 113,
+                                lineNumber: 129,
                                 columnNumber: 29
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 110,
+                        lineNumber: 126,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                lineNumber: 108,
+                lineNumber: 124,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                        className: "border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]",
+                        children: "UG Exams"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                        lineNumber: 135,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid grid-cols-4 gap-5 mt-5 w-full",
+                        children: ugCourse.map((item, index)=>{
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: "/course/".concat(item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-'), "-online"),
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>setMegaMenuOpen(false),
+                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ",
+                                    children: item
+                                }, index, false, {
+                                    fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                                    lineNumber: 139,
+                                    columnNumber: 111
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                                lineNumber: 139,
+                                columnNumber: 29
+                            }, this);
+                        })
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                        lineNumber: 136,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                lineNumber: 134,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-        lineNumber: 87,
+        lineNumber: 103,
         columnNumber: 9
     }, this);
 }
@@ -751,138 +838,180 @@ function StudyMaterial(param) {
         'Design Course'
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "p-5",
+        className: "p-0",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full h-auto mb-10 origin-top transition-all ease-in-out duration-400 ",
+                className: "w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         className: "border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]",
                         children: "UG Exams"
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 134,
+                        lineNumber: 160,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-3 gap-7 mt-5 w-full",
+                        className: "grid grid-cols-4 gap-5 mt-5 w-full",
                         children: ugCourse.map((item, index)=>{
                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/course/".concat(item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-'), "-online"),
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>setMegaMenuOpen(false),
-                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[12px] cursor-pointer text-[15px] py-[13px] ",
+                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ",
                                     children: item
                                 }, index, false, {
                                     fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                    lineNumber: 138,
+                                    lineNumber: 164,
                                     columnNumber: 111
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                lineNumber: 138,
+                                lineNumber: 164,
                                 columnNumber: 29
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 135,
+                        lineNumber: 161,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                lineNumber: 133,
+                lineNumber: 159,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full h-auto mb-10 origin-top transition-all ease-in-out duration-400 ",
+                className: "w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         className: "border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]",
                         children: "UG Exams"
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 144,
+                        lineNumber: 170,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-3 gap-7 mt-5 w-full",
+                        className: "grid grid-cols-4 gap-5 mt-5 w-full",
                         children: ugCourse.map((item, index)=>{
                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/course/".concat(item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-'), "-online"),
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>setMegaMenuOpen(false),
-                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[12px] cursor-pointer text-[15px] py-[13px] ",
+                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ",
                                     children: item
                                 }, index, false, {
                                     fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                    lineNumber: 148,
+                                    lineNumber: 174,
                                     columnNumber: 111
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                lineNumber: 148,
+                                lineNumber: 174,
                                 columnNumber: 29
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 145,
+                        lineNumber: 171,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                lineNumber: 143,
+                lineNumber: 169,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full h-auto mb-10 origin-top transition-all ease-in-out duration-400 ",
+                className: "w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         className: "border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]",
                         children: "UG Exams"
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 154,
+                        lineNumber: 180,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-3 gap-7 mt-5 w-full",
+                        className: "grid grid-cols-4 gap-5 mt-5 w-full",
                         children: ugCourse.map((item, index)=>{
                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/course/".concat(item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-'), "-online"),
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>setMegaMenuOpen(false),
-                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[12px] cursor-pointer text-[15px] py-[13px] ",
+                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ",
                                     children: item
                                 }, index, false, {
                                     fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                    lineNumber: 158,
+                                    lineNumber: 184,
                                     columnNumber: 111
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                lineNumber: 158,
+                                lineNumber: 184,
                                 columnNumber: 29
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 155,
+                        lineNumber: 181,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                lineNumber: 153,
+                lineNumber: 179,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                        className: "border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]",
+                        children: "UG Exams"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                        lineNumber: 190,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid grid-cols-4 gap-5 mt-5 w-full",
+                        children: ugCourse.map((item, index)=>{
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: "/course/".concat(item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-'), "-online"),
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>setMegaMenuOpen(false),
+                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ",
+                                    children: item
+                                }, index, false, {
+                                    fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                                    lineNumber: 194,
+                                    columnNumber: 111
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                                lineNumber: 194,
+                                columnNumber: 29
+                            }, this);
+                        })
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                        lineNumber: 191,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                lineNumber: 189,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-        lineNumber: 132,
+        lineNumber: 158,
         columnNumber: 9
     }, this);
 }
@@ -897,138 +1026,180 @@ function TestSeries(param) {
         'Design Course'
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "p-5",
+        className: "p-0",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full h-auto mb-10 origin-top transition-all ease-in-out duration-400 ",
+                className: "w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         className: "border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]",
                         children: "UG Exams"
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 178,
+                        lineNumber: 214,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-3 gap-7 mt-5 w-full",
+                        className: "grid grid-cols-4 gap-5 mt-5 w-full",
                         children: ugCourse.map((item, index)=>{
                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/course/".concat(item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-'), "-online"),
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>setMegaMenuOpen(false),
-                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[12px] cursor-pointer text-[15px] py-[13px] ",
+                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ",
                                     children: item
                                 }, index, false, {
                                     fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                    lineNumber: 182,
+                                    lineNumber: 218,
                                     columnNumber: 111
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                lineNumber: 182,
+                                lineNumber: 218,
                                 columnNumber: 29
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 179,
+                        lineNumber: 215,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                lineNumber: 177,
+                lineNumber: 213,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full h-auto mb-10 origin-top transition-all ease-in-out duration-400 ",
+                className: "w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         className: "border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]",
                         children: "UG Exams"
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 188,
+                        lineNumber: 224,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-3 gap-7 mt-5 w-full",
+                        className: "grid grid-cols-4 gap-5 mt-5 w-full",
                         children: ugCourse.map((item, index)=>{
                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/course/".concat(item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-'), "-online"),
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>setMegaMenuOpen(false),
-                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[12px] cursor-pointer text-[15px] py-[13px] ",
+                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ",
                                     children: item
                                 }, index, false, {
                                     fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                    lineNumber: 192,
+                                    lineNumber: 228,
                                     columnNumber: 111
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                lineNumber: 192,
+                                lineNumber: 228,
                                 columnNumber: 29
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 189,
+                        lineNumber: 225,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                lineNumber: 187,
+                lineNumber: 223,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full h-auto mb-10 origin-top transition-all ease-in-out duration-400 ",
+                className: "w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         className: "border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]",
                         children: "UG Exams"
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 198,
+                        lineNumber: 234,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-3 gap-7 mt-5 w-full",
+                        className: "grid grid-cols-4 gap-5 mt-5 w-full",
                         children: ugCourse.map((item, index)=>{
                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/course/".concat(item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-'), "-online"),
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>setMegaMenuOpen(false),
-                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[12px] cursor-pointer text-[15px] py-[13px] ",
+                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ",
                                     children: item
                                 }, index, false, {
                                     fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                    lineNumber: 202,
+                                    lineNumber: 238,
                                     columnNumber: 111
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                lineNumber: 202,
+                                lineNumber: 238,
                                 columnNumber: 29
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 199,
+                        lineNumber: 235,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                lineNumber: 197,
+                lineNumber: 233,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                        className: "border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]",
+                        children: "UG Exams"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                        lineNumber: 244,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid grid-cols-4 gap-5 mt-5 w-full",
+                        children: ugCourse.map((item, index)=>{
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: "/course/".concat(item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-'), "-online"),
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>setMegaMenuOpen(false),
+                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ",
+                                    children: item
+                                }, index, false, {
+                                    fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                                    lineNumber: 248,
+                                    columnNumber: 111
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                                lineNumber: 248,
+                                columnNumber: 29
+                            }, this);
+                        })
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                        lineNumber: 245,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                lineNumber: 243,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-        lineNumber: 176,
+        lineNumber: 212,
         columnNumber: 9
     }, this);
 }
@@ -1043,141 +1214,180 @@ function FreeRes(param) {
         'Design Course'
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "p-5",
+        className: "p-0",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full h-auto mb-10 origin-top transition-all ease-in-out duration-400 ",
+                className: "w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         className: "border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]",
                         children: "UG Exams"
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 222,
+                        lineNumber: 268,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-3 gap-7 mt-5 w-full",
-                        children: ugCourse.map((item, index)=>{
-                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                href: "/course/".concat(item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-'), "-online"),
-                                children: [
-                                    " ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        onClick: ()=>setMegaMenuOpen(false),
-                                        className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[12px] cursor-pointer text-[15px] py-[13px] ",
-                                        children: item
-                                    }, index, false, {
-                                        fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                        lineNumber: 226,
-                                        columnNumber: 112
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                lineNumber: 226,
-                                columnNumber: 29
-                            }, this);
-                        })
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 223,
-                        columnNumber: 17
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                lineNumber: 221,
-                columnNumber: 13
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full h-auto mb-10 origin-top transition-all ease-in-out duration-400 ",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                        className: "border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]",
-                        children: "UG Exams"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 232,
-                        columnNumber: 17
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-3 gap-7 mt-5 w-full",
+                        className: "grid grid-cols-4 gap-5 mt-5 w-full",
                         children: ugCourse.map((item, index)=>{
                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/course/".concat(item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-'), "-online"),
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>setMegaMenuOpen(false),
-                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[12px] cursor-pointer text-[15px] py-[13px] ",
+                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ",
                                     children: item
                                 }, index, false, {
                                     fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                    lineNumber: 236,
+                                    lineNumber: 272,
                                     columnNumber: 111
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                lineNumber: 236,
+                                lineNumber: 272,
                                 columnNumber: 29
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 233,
+                        lineNumber: 269,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                lineNumber: 231,
+                lineNumber: 267,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full h-auto mb-10 origin-top transition-all ease-in-out duration-400 ",
+                className: "w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         className: "border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]",
                         children: "UG Exams"
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 242,
+                        lineNumber: 278,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-3 gap-7 mt-5 w-full",
+                        className: "grid grid-cols-4 gap-5 mt-5 w-full",
                         children: ugCourse.map((item, index)=>{
                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/course/".concat(item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-'), "-online"),
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>setMegaMenuOpen(false),
-                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[12px] cursor-pointer text-[15px] py-[13px] ",
+                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ",
                                     children: item
                                 }, index, false, {
                                     fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                    lineNumber: 246,
+                                    lineNumber: 282,
                                     columnNumber: 111
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                                lineNumber: 246,
+                                lineNumber: 282,
                                 columnNumber: 29
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                        lineNumber: 243,
+                        lineNumber: 279,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-                lineNumber: 241,
+                lineNumber: 277,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                        className: "border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]",
+                        children: "UG Exams"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                        lineNumber: 288,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid grid-cols-4 gap-5 mt-5 w-full",
+                        children: ugCourse.map((item, index)=>{
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: "/course/".concat(item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-'), "-online"),
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>setMegaMenuOpen(false),
+                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ",
+                                    children: item
+                                }, index, false, {
+                                    fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                                    lineNumber: 292,
+                                    columnNumber: 111
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                                lineNumber: 292,
+                                columnNumber: 29
+                            }, this);
+                        })
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                        lineNumber: 289,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                lineNumber: 287,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                        className: "border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]",
+                        children: "UG Exams"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                        lineNumber: 298,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid grid-cols-4 gap-5 mt-5 w-full",
+                        children: ugCourse.map((item, index)=>{
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: "/course/".concat(item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-'), "-online"),
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>setMegaMenuOpen(false),
+                                    className: "text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ",
+                                    children: item
+                                }, index, false, {
+                                    fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                                    lineNumber: 302,
+                                    columnNumber: 111
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                                lineNumber: 302,
+                                columnNumber: 29
+                            }, this);
+                        })
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                        lineNumber: 299,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
+                lineNumber: 297,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/homePageComponents/MegaMenu.jsx",
-        lineNumber: 220,
+        lineNumber: 266,
         columnNumber: 9
     }, this);
 }
@@ -1249,8 +1459,8 @@ function Header() {
                             className: "flex items-center gap-5",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                    className: "w-[160px] object-cover",
-                                    src: "https://inframestudios.co.nz/wp-content/uploads/2025/01/Copy-of-Original-size-inframe-studios-removebg-preview-removebg-preview.png",
+                                    className: "w-[160px] h-[100] object-cover",
+                                    src: "/logo.jpg",
                                     alt: ""
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/common/Header.jsx",
