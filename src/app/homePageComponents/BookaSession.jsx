@@ -6,52 +6,55 @@ import { FaGraduationCap, FaUser } from "react-icons/fa";
 export default function BookaSession() {
   return (
     <div className="w-full bg-[#fff9f9] p-4 lg:p-10">
-      <div className="max-w-[1320px] mx-auto rounded-2xl bg-white shadow-md overflow-hidden grid lg:grid-cols-[60%_auto] grid-cols-1">
+      <div className="max-w-[1320px] mx-auto rounded-[40px] bg-white shadow-md overflow-hidden grid lg:grid-cols-[65%_auto] grid-cols-1">
         {/* Left Section */}
-        <div className="p-8 lg:p-12 flex flex-col justify-center space-y-6 bg-white">
-          <div className="flex items-center gap-3 text-red-600">
-            <MdOutlineImportContacts className="text-[32px]" />
-            <h3 className="text-[26px] lg:text-[30px] font-bold leading-tight text-gray-800">
+        <div style={{ backgroundImage: 'url("/bookSession.jpg")' }} className="p-8 lg:p-12 bg-no-repeat bg-cover flex flex-col  space-y-6 bg-white relative z-40">
+          <div className="w-[100%] h-[100%] absolute top-0 left-0 z-[-10] bg-gradient-to-r from-black/80 via-black/70 to-black/50"></div>
+
+
+          <div className="flex items-center gap-3 text-white">
+            <MdOutlineImportContacts className="text-[40px] " />
+            <h3 className="text-[26px] lg:text-[40px] font-bold leading-tight text-white">
               Book Your Free Counseling Session
             </h3>
           </div>
 
-          <p className="text-[16px] text-gray-600 leading-relaxed">
+          <p className="text-[16px] text-white leading-[35px]">
             Not sure which creative career to pursue? Let's talk it out. Our expert
             mentors will help you understand the best path forward based on your
             passion and goals.
           </p>
 
           <ul className="space-y-4">
-            <li className="flex items-start gap-3 text-gray-700 text-[16px]">
-              <FaUser className="text-red-500 mt-1" />
+            <li className="flex items-start gap-3 text-white text-[16px]">
+              <FaUser className="text-white mt-1" />
               Fill out a short form with your details.
             </li>
-            <li className="flex items-start gap-3 text-gray-700 text-[16px]">
-              <MdLocalPhone className="text-red-500 mt-1" />
+            <li className="flex items-start gap-3 text-white text-[16px]">
+              <MdLocalPhone className="text-white mt-1" />
               Get a call from our academic counselor within 24 hours.
             </li>
-            <li className="flex items-start gap-3 text-gray-700 text-[16px]">
-              <FaGraduationCap className="text-red-500 mt-1" />
+            <li className="flex items-start gap-3 text-white text-[16px]">
+              <FaGraduationCap className="text-white mt-1" />
               Receive personalized guidance on exams, programs, and colleges.
             </li>
           </ul>
 
-          {/* Callout or Highlight */}
+          {/* Callout or Highlight
           <div className="bg-red-50 border-l-4 border-red-600 p-4 rounded-lg shadow-sm mt-4">
             <p className="text-sm text-gray-700 font-medium">
               🎯 9 out of 10 students say this session clarified their career direction.
             </p>
-          </div>
+          </div> */}
 
           {/* Assurance */}
-          <div className="text-[14px] text-gray-500 italic mt-2">
+          <div className="text-[14px] text-white italic mt-2">
             “I was confused between NID and UCEED — this call helped me decide clearly.” — Rhea, Design Aspirant
           </div>
         </div>
 
         {/* Right Section - Form */}
-        <form className="p-8 lg:p-12 bg-white space-y-6 flex flex-col justify-center">
+        <form className="p-8 lg:p-12 bg-white space-y-6 flex flex-col justify-center border-t-2 border-b-2 border-r-2 border-gray-200">
           <h2 className="text-2xl font-bold text-gray-800">
             Fill in Your Details
           </h2>

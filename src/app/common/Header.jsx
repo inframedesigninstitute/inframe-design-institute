@@ -1,7 +1,9 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import {
+  FaAngleDown,
   FaAngleRight,
+  FaAngleUp,
   FaChevronDown,
   FaClosedCaptioning,
 } from "react-icons/fa";
@@ -12,13 +14,13 @@ import MegaMenu from "../homePageComponents/MegaMenu";
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
-  const [activePage, setActivePage] = useState("");
+  const [activePage, setActivePage] = useState('');
   const [MegaMenuOpen, setMegaMenuOpen] = useState(false)
 
   return (
     <header className="sticky top-0 z-[100] bg-white">
       {activePage && (
-        <div className="w-[100%] h-[100vh] fixed top-0 left-0 bg-[rgba(0,0,0,0.8)]"></div>
+        <div className="w-[100%] h-[100vh] fixed top-0 left-0 bg-[rgba(0,0,0,0.8)] z-[40]"></div>
       )}
 
       {activePage && (
@@ -29,13 +31,12 @@ export default function Header() {
         <div className="max-w-[1320px] mx-auto flex items-center justify-between py-[0px]">
           <div className="flex items-center gap-5">
             <img
-              className="w-[160px] h-[100] object-cover"
+              className="w-[160px] h-[70] object-cover"
               src="/logo.jpg"
               alt=""
             />
-            <button onClick={() => setMegaMenuOpen(!MegaMenuOpen)} className=" flex items-center  gap-2 border-[2px] border-red-600 rounded-[10px] px-[15px] py-[8px] text-red-600 bg-white hover:bg-red-600 hover:text-white  cursor-pointer hover:border-transparent font-semibold duration-300">
-              All Courses <FaChevronDown />{" "}
-
+            <button onClick={() => setMegaMenuOpen(!MegaMenuOpen)} className={`${MegaMenuOpen ? 'bg-red-600 text-white' : 'bg-white'} flex items-center  gap-2 border-[2px] border-red-600 rounded-[10px] px-[15px] py-[8px] text-red-600    cursor-pointer  font-semibold duration-300 hover:bg-red-600 hover:text-white hover:border-transparent`}>
+              All Courses <FaAngleDown className={`${MegaMenuOpen ? 'rotate-180' : 'rotate-0'} duration-200`} />
               <MegaMenu MegaMenuOpen={MegaMenuOpen} setMegaMenuOpen={setMegaMenuOpen} />
 
               {MegaMenuOpen && <div className="absolute top-[100%] z-50 left-0 w-full h-screen bg-[rgba(0,0,0,0.6)] "></div>}
@@ -44,10 +45,10 @@ export default function Header() {
 
           {/* mega menu open and close functionality*/}
           <div className="flex items-center gap-5">
-            <ul className="flex items-center gap-5">
-              <li className="text-[14px] font-semibold hover:bg-red-50 px-[5px] py-[40px] duration-300 cursor-pointer text-gray-500 group">
+            <ul className="flex items-center gap-2">
+              <li className="text-[14px] font-semibold hover:bg-red-50 px-[5px] py-[30px] duration-300 cursor-pointer text-gray-500 group">
                 ONLINE COURSES
-                <div className="invisible opacity-0 group-hover:opacity-[1] scale-[0.9] group-hover:scale-[1] origin-top transition-all duration-300 ease-in-out group-hover:visible absolute top-[100%] left-1/2 -translate-x-1/2 w-[1100px] h-auto bg-white shadow-2xl border-[1px] border-gray-300 grid grid-cols-4 gap-10 p-5 rounded-b-[35px]">
+                <div className="invisible opacity-0 group-hover:opacity-100 scale-[0.9] group-hover:scale-[1] origin-top transition-all duration-300 ease-in-out group-hover:visible absolute top-[100%] left-1/2 -translate-x-1/2 w-[1100px] h-auto bg-white shadow-2xl border-[1px] border-gray-300 grid grid-cols-4 gap-10 p-5 rounded-b-[35px]">
                   <ul>
                     <li className="text-[22px] text-red-600 uppercase mb-2">
                       ug exams
@@ -136,9 +137,9 @@ export default function Header() {
                   </ul>
                 </div>
               </li>
-              <li className="text-[14px] font-semibold hover:bg-red-50 px-[5px] py-[40px] duration-300 cursor-pointer text-gray-500 group">
+              <li className="text-[14px] font-semibold hover:bg-red-50 px-[5px] py-[30px] duration-300 cursor-pointer text-gray-500 group">
                 OFFLINE COURSES
-                <div className="invisible opacity-0 group-hover:opacity-[1] scale-[0.9] group-hover:scale-[1] origin-top transition-all duration-300 ease-in-out group-hover:visible absolute top-[100%] left-1/2 -translate-x-1/2 w-[850px] h-auto bg-white shadow-2xl border-[1px] border-gray-300 grid grid-cols-3 gap-10 p-5 rounded-b-[35px]">
+                <div className="invisible opacity-0 group-hover:opacity-100 scale-[0.9] group-hover:scale-[1] origin-top transition-all duration-300 ease-in-out group-hover:visible absolute top-[100%] left-1/2 -translate-x-1/2 w-[850px] h-auto bg-white shadow-2xl border-[1px] border-gray-300 grid grid-cols-3 gap-10 p-5 rounded-b-[35px]">
                   <ul>
                     <li className="text-[22px] text-red-600 uppercase mb-2">
                       UG Exams
@@ -210,9 +211,9 @@ export default function Header() {
                   </ul>
                 </div>
               </li>
-              <li className="uppercase text-[14px] font-semibold hover:bg-red-50 px-[5px] py-[40px] duration-300 cursor-pointer text-gray-500 group">
+              <li className="uppercase text-[14px] font-semibold hover:bg-red-50 px-[5px] py-[30px] duration-300 cursor-pointer text-gray-500 group">
                 Study Material
-                <div className="invisible opacity-0 group-hover:opacity-[1] scale-[0.9] group-hover:scale-[1] origin-top transition-all duration-300 ease-in-out group-hover:visible absolute top-[100%] left-1/2 -translate-x-1/2 w-[850px] h-auto bg-white shadow-2xl border-[1px] border-gray-300 grid grid-cols-3 gap-10 p-5 rounded-b-[35px]">
+                <div className="invisible opacity-0 group-hover:opacity-100 scale-[0.9] group-hover:scale-[1] origin-top transition-all duration-300 ease-in-out group-hover:visible absolute top-[100%] left-1/2 -translate-x-1/2 w-[850px] h-auto bg-white shadow-2xl border-[1px] border-gray-300 grid grid-cols-3 gap-10 p-5 rounded-b-[35px]">
                   <ul>
                     <li className="text-[22px] text-red-600 uppercase mb-2">
                       UG Exams
@@ -284,9 +285,9 @@ export default function Header() {
                   </ul>
                 </div>
               </li>
-              <li className="uppercase text-[14px] font-semibold hover:bg-red-50 px-[5px] py-[40px] duration-300 cursor-pointer text-gray-500 group">
+              <li className="uppercase text-[14px] font-semibold hover:bg-red-50 px-[5px] py-[30px] duration-300 cursor-pointer text-gray-500 group">
                 Test Series
-                <div className="invisible opacity-0 group-hover:opacity-[1] scale-[0.9] group-hover:scale-[1] origin-top transition-all duration-300 ease-in-out group-hover:visible absolute top-[100%] left-1/2 -translate-x-1/2 w-[900px] h-auto bg-white shadow-2xl border-[1px] border-gray-300 grid grid-cols-3 gap-10 p-5 rounded-b-[35px]">
+                <div className="invisible opacity-0 group-hover:opacity-100 scale-[0.9] group-hover:scale-[1] origin-top transition-all duration-300 ease-in-out group-hover:visible absolute top-[100%] left-1/2 -translate-x-1/2 w-[900px] h-auto bg-white shadow-2xl border-[1px] border-gray-300 grid grid-cols-3 gap-10 p-5 rounded-b-[35px]">
                   <ul>
                     <li className="text-[22px] text-red-600 uppercase mb-2">
                       UG Exams
@@ -358,7 +359,7 @@ export default function Header() {
                   </ul>
                 </div>
               </li>
-              <li className="text-[14px] font-semibold hover:bg-red-50 px-[5px] py-[40px] duration-300 cursor-pointer text-gray-500 group">
+              <li className="text-[14px] font-semibold hover:bg-red-50 px-[5px] py-[30px] duration-300 cursor-pointer text-gray-500 group">
                 FREE RESOURCES
               </li>
             </ul>

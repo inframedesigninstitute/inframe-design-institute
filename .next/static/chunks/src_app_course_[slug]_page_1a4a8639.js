@@ -77,7 +77,7 @@ function CoursePage() {
             className: "max-w-[1320] mx-auto lg:px-6 px-3 lg:py-[0] sm:py-[20]",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-full  grid lg:grid-cols-[40%_auto] items-center gap-5 my-[30px]",
+                    className: "w-full  grid lg:grid-cols-[40%_auto] items-center gap-2 my-[30px]",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "sm:p-5 shadow-2xl  rounded-[0px]",
@@ -90,7 +90,7 @@ function CoursePage() {
                                 frameborder: "0",
                                 allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
                                 referrerpolicy: "strict-origin-when-cross-origin",
-                                allowfullscreen: true
+                                allowFullScreen: true
                             }, void 0, false, {
                                 fileName: "[project]/src/app/course/[slug]/page.js",
                                 lineNumber: 95,
@@ -181,7 +181,7 @@ function CoursePage() {
                                     className: "grid sm:grid-cols-2 gap-4",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            className: "flex items-center justify-center gap-2 bg-gray-200 text-red-700 hover:bg-red-600 hover:text-white transition duration-300 py-3 rounded-md text-[20px] font-medium",
+                                            className: "flex items-center justify-center gap-2 bg-gray-300 text-red-700 hover:bg-red-600 hover:text-white transition duration-300 py-3 rounded-md text-[20px] font-medium",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaVideo"], {}, void 0, false, {
                                                     fileName: "[project]/src/app/course/[slug]/page.js",
@@ -222,14 +222,14 @@ function CoursePage() {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-full lg:p-3 lg:my-[60px] my-[30px]",
+                    className: "w-full lg:p-3 lg:my-[60px] my-[30px] bg-gray-200  text-white rounded-[10px]",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "max-w-7xl mx-auto bg-[#F4F4F5] py-[30px] p-5 rounded-[10px]",
+                        className: "max-w-7xl mx-auto py-[30px] p-5 rounded-[10px]  text-white",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                    className: "font-semibold mb-5 tracking-tight text-3xl text-red-600",
+                                    className: "font-semibold mb-5 tracking-tight text-3xl text-black",
                                     children: "Frequently Asked Questions"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/course/[slug]/page.js",
@@ -244,16 +244,16 @@ function CoursePage() {
                                                     setCurrentFaqId(item.id);
                                                     currentFaqId === item.id && setCurrentFaqId(0);
                                                 },
-                                                className: "".concat(item.id === currentFaqId ? "" : "", " w-[100%] lg:text-[20px] text-[16px] py-[18px] text-gray-950 duration-200 cursor-pointer border-b-[1px] border-[#F5ECC8] hover:text-red-600 mt-[0px] grid gap-1 grid-cols-[95%_auto] items-center "),
+                                                className: "".concat(item.id === currentFaqId ? "" : "", " w-[100%] lg:text-[20px] text-[16px] hover:text-red-600 text-black py-[18px]  duration-200 cursor-pointer border-b-[1px] border-[#b1b1b1] mt-[0px] grid gap-1 grid-cols-[95%_auto] items-center "),
                                                 children: [
                                                     item.question,
                                                     item.id === currentFaqId ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaMinusCircle"], {}, void 0, false, {
                                                         fileName: "[project]/src/app/course/[slug]/page.js",
-                                                        lineNumber: 214,
+                                                        lineNumber: 213,
                                                         columnNumber: 25
                                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaPlusCircle"], {}, void 0, false, {
                                                         fileName: "[project]/src/app/course/[slug]/page.js",
-                                                        lineNumber: 216,
+                                                        lineNumber: 215,
                                                         columnNumber: 25
                                                     }, this)
                                                 ]
@@ -267,7 +267,7 @@ function CoursePage() {
                                                 children: item.answer
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/course/[slug]/page.js",
-                                                lineNumber: 219,
+                                                lineNumber: 218,
                                                 columnNumber: 21
                                             }, this)
                                         ]

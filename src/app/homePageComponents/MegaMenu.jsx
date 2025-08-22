@@ -6,9 +6,9 @@ export default function MegaMenu({ MegaMenuOpen, setMegaMenuOpen }) {
 
     //group-hover:visible invisible scale-y-0 group-hover:scale-y-100 
     return (
-        <div onClick={(e) => e.stopPropagation()} className={`${MegaMenuOpen ? ' translate-y-0 opacity-100' : ' -translate-y-10 opacity-0'} absolute duration-400 transition-all ease-in-out top-[100%] 
+        <div onClick={(e) => e.stopPropagation()} className={`${MegaMenuOpen ? ' translate-y-0 block opacity-100 visible' : 'invisible -translate-y-10 opacity-0 hidden'} absolute duration-400 transition-all ease-in-out top-[100%] 
         left-[170px] bg-white shadow-2xl rounded-b-[15px] w-[900px] origin-top h-[auto] z-[100]
-         p-5 lg:block hidden text-gray-900`}>
+         px-5 lg:block hidden text-gray-900`}>
             <div className="grid grid-cols-[25%_auto] gap-5" >
                 <div className="border-0">
                     <ul>
@@ -20,7 +20,7 @@ export default function MegaMenu({ MegaMenuOpen, setMegaMenuOpen }) {
                         <li onClick={() => setActiveTab('freeRes')} className="text-start text-[18px] mb-[10px] py-[10px] px-3 rounded-[10px] duration-500 hover:bg-gray-200 ">Free Resources</li>
                     </ul>
                 </div>
-                <div className="h-[600px] overflow-y-scroll">
+                <div className="h-[80vh] overflow-y-scroll">
                     {activeTab === 'onlineCourse' && <OnlineCourse setMegaMenuOpen={setMegaMenuOpen} />}
                     {activeTab === 'offlineCourse' && <OfflineCourse setMegaMenuOpen={setMegaMenuOpen} />}
                     {activeTab === 'studyMaterial' && <StudyMaterial setMegaMenuOpen={setMegaMenuOpen} />}

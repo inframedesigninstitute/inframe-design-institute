@@ -11,6 +11,7 @@ export default function TopCourses() {
   return (
     <div className="w-full lg:p-0 p-3">
       <div className="max-w-[1320px] mx-auto">
+        <h3 className="px-6 text-[35px] text-center font-bold uppercase text-gray-900">Top Selling courses</h3>
         <OnlineCourses />
         <OfflineCourses />
         <StudyMaterial />
@@ -58,8 +59,8 @@ export function OnlineCourses() {
     },
   ];
   return (
-    <div className="my-[80px] lg:px-6">
-      <h3 className="text-gray-900 lg:text-start text-center font-bold text-[35px] lg:my-10 my-5">
+    <div className="my-[0px] lg:px-6">
+      <h3 className="text-gray-900 lg:text-start text-center font-bold text-[25px] lg:mb-10 my-5">
         Online <span className="text-red-600"> Best Selling </span> Courses
       </h3>
       <div className="lg:hidden">
@@ -162,8 +163,8 @@ export function OfflineCourses() {
     },
   ];
   return (
-    <div className="my-[80px] lg:px-6">
-      <h3 className="text-gray-900 lg:text-start text-center font-bold text-[35px] lg:my-10 my-5">
+    <div className="my-[0px] lg:px-6">
+      <h3 className="text-gray-900 lg:text-start text-center font-bold text-[25px] lg:mb-10 my-5">
         Offline <span className="text-red-600"> Best Selling </span> Courses
       </h3>
       <div className="lg:hidden">
@@ -266,8 +267,8 @@ export function StudyMaterial() {
     },
   ];
   return (
-    <div className="my-[80px] lg:px-6">
-      <h3 className="text-gray-900 lg:text-start text-center font-bold text-[35px] lg:my-10 my-5">
+    <div className="my-[0px] lg:px-6">
+      <h3 className="text-gray-900 lg:text-start text-center font-bold text-[25px] lg:mb-10 my-5">
         Offline <span className="text-red-600"> Best Selling </span> Courses
       </h3>
       <div className="lg:hidden">
@@ -371,8 +372,8 @@ export function TestSeries() {
   ];
 
   return (
-    <div className="my-[80px] lg:px-6">
-      <h3 className="text-gray-900 lg:text-start text-center font-bold text-[35px] lg:my-10 my-5">
+    <div className="my-[0px] lg:px-6">
+      <h3 className="text-gray-900 lg:text-start text-center font-bold text-[25px] lg:mb-10 my-5">
         Test Series <span className="text-red-600"> Best Selling </span> Courses
       </h3>
       <div className="lg:hidden">

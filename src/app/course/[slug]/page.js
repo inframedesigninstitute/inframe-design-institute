@@ -59,16 +59,16 @@ export default function CoursePage() {
     },
   ];
 
-//   let courses = [
-//     "nift course",
-//     "nata course",
-//     "nift course",
-//     "nata course",
-//     "nift course",
-//     "nata course",
-//     "nift course",
-//     "nata course",
-//   ];
+  //   let courses = [
+  //     "nift course",
+  //     "nata course",
+  //     "nift course",
+  //     "nata course",
+  //     "nift course",
+  //     "nata course",
+  //     "nift course",
+  //     "nata course",
+  //   ];
 
   return (
     <div className="w-full">
@@ -90,7 +90,7 @@ export default function CoursePage() {
                     })}
                 </ul> */}
 
-        <div className="w-full  grid lg:grid-cols-[40%_auto] items-center gap-5 my-[30px]">
+        <div className="w-full  grid lg:grid-cols-[40%_auto] items-center gap-2 my-[30px]">
           <div className="sm:p-5 shadow-2xl  rounded-[0px]">
             <iframe
               className="rounded-[25px]"
@@ -101,7 +101,7 @@ export default function CoursePage() {
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
           <div className="w-full max-w-4xl mx-auto px-4">
@@ -151,7 +151,7 @@ export default function CoursePage() {
 
             {/* Buttons */}
             <div className="grid sm:grid-cols-2 gap-4">
-              <button className="flex items-center justify-center gap-2 bg-gray-200 text-red-700 hover:bg-red-600 hover:text-white transition duration-300 py-3 rounded-md text-[20px] font-medium">
+              <button className="flex items-center justify-center gap-2 bg-gray-300 text-red-700 hover:bg-red-600 hover:text-white transition duration-300 py-3 rounded-md text-[20px] font-medium">
                 <FaVideo />
                 Watch Demo
               </button>
@@ -190,10 +190,10 @@ export default function CoursePage() {
                     })}
                 </div> */}
 
-        <div className="w-full lg:p-3 lg:my-[60px] my-[30px]">
-          <div className="max-w-7xl mx-auto bg-[#F4F4F5] py-[30px] p-5 rounded-[10px]">
+        <div className="w-full lg:p-3 lg:my-[60px] my-[30px] bg-gray-200  text-white rounded-[10px]">
+          <div className="max-w-7xl mx-auto py-[30px] p-5 rounded-[10px]  text-white">
             <div className="">
-              <h4 className="font-semibold mb-5 tracking-tight text-3xl text-red-600">
+              <h4 className="font-semibold mb-5 tracking-tight text-3xl text-black">
                 Frequently Asked Questions
               </h4>
 
@@ -205,9 +205,8 @@ export default function CoursePage() {
                         setCurrentFaqId(item.id);
                         currentFaqId === item.id && setCurrentFaqId(0);
                       }}
-                      className={`${
-                        item.id === currentFaqId ? "" : ""
-                      } w-[100%] lg:text-[20px] text-[16px] py-[18px] text-gray-950 duration-200 cursor-pointer border-b-[1px] border-[#F5ECC8] hover:text-red-600 mt-[0px] grid gap-1 grid-cols-[95%_auto] items-center `}
+                      className={`${item.id === currentFaqId ? "" : ""
+                        } w-[100%] lg:text-[20px] text-[16px] hover:text-red-600 text-black py-[18px]  duration-200 cursor-pointer border-b-[1px] border-[#b1b1b1] mt-[0px] grid gap-1 grid-cols-[95%_auto] items-center `}
                     >
                       {item.question}
                       {item.id === currentFaqId ? (
@@ -217,11 +216,10 @@ export default function CoursePage() {
                       )}
                     </h6>
                     <div
-                      className={`${
-                        currentFaqId === item.id
-                          ? "h-auto opacity-[1]"
-                          : "h-0 scale-0 opacity-0"
-                      } text-black rounded-b-lg my-[10px]  text-[18px] left-0  w-[100%]  `}
+                      className={`${currentFaqId === item.id
+                        ? "h-auto opacity-[1]"
+                        : "h-0 scale-0 opacity-0"
+                        } text-black rounded-b-lg my-[10px]  text-[18px] left-0  w-[100%]  `}
                     >
                       {item.answer}
                     </div>

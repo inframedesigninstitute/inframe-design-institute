@@ -52,9 +52,9 @@ export function LoginForm({ activePage, setActivePage }) {
   };
 
   return (
-    <div className="fixed lg:w-[350px] w-[320px] h-[auto] z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-5 rounded-[10px] shadow-md shadow-red-600">
+    <div className="fixed lg:w-[350px] w-[320px] h-[auto] z-[1000] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-5 rounded-[10px] shadow-md shadow-red-600">
       <div className="flex justify-between items-center">
-        <h3 className="text-[25px] text-gray-900 my-4 ">Login</h3>
+        <h3 className="text-[25px] text-gray-900 my-4 uppercase">Login</h3>
         <span
           onClick={() => setActivePage("")}
           className="text-[25px] hover:text-red-600 duration-300 cursor-pointer"
@@ -96,9 +96,9 @@ export function LoginForm({ activePage, setActivePage }) {
 export function Register({ activePage, setActivePage }) {
   return (
     <>
-      <div className="fixed lg:w-[420px] w-[320px] h-[auto] z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-5 rounded-[10px] shadow-md shadow-red-600">
+      <div className="fixed lg:w-[420px] w-[320px] h-[auto] z-[1000] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-5 rounded-[10px] shadow-md shadow-red-600">
         <div className="flex justify-between items-center">
-          <h3 className="text-[25px] text-gray-900 my-4 ">Register</h3>
+          <h3 className="text-[25px] text-gray-900 my-4 uppercase ">Register</h3>
           <span
             onClick={() => setActivePage("")}
             className="text-[25px] hover:text-red-600 duration-300 cursor-pointer"

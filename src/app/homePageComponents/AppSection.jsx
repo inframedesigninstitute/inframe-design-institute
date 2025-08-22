@@ -1,7 +1,7 @@
 export default function AppSection() {
     return (
         <div className="w-full lg:p-0 p-3 lg:py-[30px] py-[30px] overflow-hidden">
-            <div className="max-w-[1120px] grid lg:grid-cols-[70%_auto] items-center mx-auto bg-gray-00 lg:p-10 p-5  rounded-[10px] ">
+            <div className="max-w-[1120px] grid lg:grid-cols-[70%_auto] items-center mx-auto lg:p-0 p-5  rounded-[10px] ">
                 <div>
                     <h3 className="lg:text-[30px] text-[25px] lg:text-start text-center font-bold">Download Our App For Better Experience</h3>
                     <ul>

@@ -7,7 +7,7 @@ export default function StudyMaterials() {
         { heading: 'Notes', description: 'Use Physics Wallah’s detailed study materials that simplify complex ideas into easily understandable language', src: 'https://static.pw.live/5eb393ee95fab7468a79d189/GLOBAL_CMS/3eb5198e-6f36-4df4-ad97-81716b80bab2.webp' },
     ]
     return (
-        <div className='w-full lg:p-0 p-3'>
+        <div className='w-full lg:p-0 p-3 lg:my-[40px] my-[30px]'>
             <div className="max-w-[1320px] mx-auto lg:py-[60px] py-[30px]">
                 <h3 className='text-[35px] text-center font-semibold my-[15px]'>Study Resources</h3>
                 <p className='text-center text-[20px] my-[25px]'>A diverse array of learning materials to enhance your educational journey.</p>
