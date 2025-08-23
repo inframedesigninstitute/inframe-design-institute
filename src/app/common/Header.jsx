@@ -1,5 +1,7 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { VscTriangleRight } from "react-icons/vsc";
+
 import {
   FaAngleDown,
   FaAngleRight,
@@ -11,11 +13,13 @@ import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
 import { MdClose } from "react-icons/md";
 import UserControl from "./UserControl";
 import MegaMenu from "../homePageComponents/MegaMenu";
+import { megaMenuData } from "../categoryData/categoryApi";
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [activePage, setActivePage] = useState('');
   const [MegaMenuOpen, setMegaMenuOpen] = useState(false)
+
 
   return (
     <header className="sticky top-0 z-[100] bg-white">
@@ -45,323 +49,43 @@ export default function Header() {
 
           {/* mega menu open and close functionality*/}
           <div className="flex items-center gap-5">
-            <ul className="flex items-center gap-2">
-              <li className="text-[14px] font-semibold hover:bg-red-50 px-[5px] py-[30px] duration-300 cursor-pointer text-gray-500 group">
-                ONLINE COURSES
-                <div className="invisible opacity-0 group-hover:opacity-100 scale-[0.9] group-hover:scale-[1] origin-top transition-all duration-300 ease-in-out group-hover:visible absolute top-[100%] left-1/2 -translate-x-1/2 w-[1100px] h-auto bg-white shadow-2xl border-[1px] border-gray-300 grid grid-cols-4 gap-10 p-5 rounded-b-[35px]">
-                  <ul>
-                    <li className="text-[22px] text-red-600 uppercase mb-2">
-                      ug exams
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Design UG Exams
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      NIFT Online Courses
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      NID Online Courses
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      UCEED Online Courses
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      COMBOS NIFT/NID/UCEED
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Architecture UG Exams
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      NATA Online Courses
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      JEE B.Arch Online Courses
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      COMBOS NATA/JEE
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className="text-[22px] text-red-600 uppercase mb-2">
-                      PG EXAMS
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Design PG Exams
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      CEED Online Courses
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      FDDI Online Courses
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      NIFT Online Courses
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      NIDOnline Courses
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Architecture PG Exams
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      GATE Architecture
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className="text-[22px] text-red-600 uppercase mb-2">
-                      Short Courses
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Short term Courses
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Situation/Studio test
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Portfolio
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className="text-[22px] text-red-600 uppercase mb-2">
-                      Fast Track Courses
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Short term Course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Brushup 30 days
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Brushup 45 days
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li className="text-[14px] font-semibold hover:bg-red-50 px-[5px] py-[30px] duration-300 cursor-pointer text-gray-500 group">
-                OFFLINE COURSES
-                <div className="invisible opacity-0 group-hover:opacity-100 scale-[0.9] group-hover:scale-[1] origin-top transition-all duration-300 ease-in-out group-hover:visible absolute top-[100%] left-1/2 -translate-x-1/2 w-[850px] h-auto bg-white shadow-2xl border-[1px] border-gray-300 grid grid-cols-3 gap-10 p-5 rounded-b-[35px]">
-                  <ul>
-                    <li className="text-[22px] text-red-600 uppercase mb-2">
-                      UG Exams
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Design UG Exam
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      NIFT Offline Course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      NID Offline Course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      FDDI Offline Course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      COMBO NIFT/NID/UCEED
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      NATA Offline course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      JEE Barch Offline course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      COMBO NATA/JEE
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className="text-[22px] text-red-600 uppercase mb-2">
-                      PG EXAM
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Design PG Exam
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      NIFT Offline Exam
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      NID Offline Exam
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      CEED Offline Course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      FDDI Offline Course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Architecture PG Exam
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Gate Architectures
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className="text-[22px] text-red-600 uppercase mb-2">
-                      Short Course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Short Term Course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Studio/Situation Test
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Portfolios
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li className="uppercase text-[14px] font-semibold hover:bg-red-50 px-[5px] py-[30px] duration-300 cursor-pointer text-gray-500 group">
-                Study Material
-                <div className="invisible opacity-0 group-hover:opacity-100 scale-[0.9] group-hover:scale-[1] origin-top transition-all duration-300 ease-in-out group-hover:visible absolute top-[100%] left-1/2 -translate-x-1/2 w-[850px] h-auto bg-white shadow-2xl border-[1px] border-gray-300 grid grid-cols-3 gap-10 p-5 rounded-b-[35px]">
-                  <ul>
-                    <li className="text-[22px] text-red-600 uppercase mb-2">
-                      UG Exams
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Design UG Exam
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      NIFT Offline Course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      NID Offline Course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      FDDI Offline Course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      COMBO NIFT/NID/UCEED
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      NATA Offline course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      JEE Barch Offline course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      COMBO NATA/JEE
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className="text-[22px] text-red-600 uppercase mb-2">
-                      PG EXAM
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Design PG Exam
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      NIFT Offline Exam
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      NID Offline Exam
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      CEED Offline Course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      FDDI Offline Course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Architecture PG Exam
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Gate Architectures
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className="text-[22px] text-red-600 uppercase mb-2">
-                      Short Course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Short Term Course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Studio/Situation Test
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Portfolios
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li className="uppercase text-[14px] font-semibold hover:bg-red-50 px-[5px] py-[30px] duration-300 cursor-pointer text-gray-500 group">
-                Test Series
-                <div className="invisible opacity-0 group-hover:opacity-100 scale-[0.9] group-hover:scale-[1] origin-top transition-all duration-300 ease-in-out group-hover:visible absolute top-[100%] left-1/2 -translate-x-1/2 w-[900px] h-auto bg-white shadow-2xl border-[1px] border-gray-300 grid grid-cols-3 gap-10 p-5 rounded-b-[35px]">
-                  <ul>
-                    <li className="text-[22px] text-red-600 uppercase mb-2">
-                      UG Exams
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Design UG Exam
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      NIFT Offline Course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      NID Offline Course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      FDDI Offline Course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      COMBO NIFT/NID/UCEED
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      NATA Offline course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      JEE Barch Offline course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      COMBO NATA/JEE
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className="text-[22px] text-red-600 uppercase mb-2">
-                      PG EXAM
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Design PG Exam
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      NIFT Offline Exam
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      NID Offline Exam
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      CEED Offline Course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      FDDI Offline Course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Architecture PG Exam
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Gate Architectures
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className="text-[22px] text-red-600 uppercase mb-2">
-                      Short Course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Short Term Course
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Studio/Situation Test
-                    </li>
-                    <li className="my-[10px] hover:text-red-600 duration-200 text-gray-500">
-                      Portfolios
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li className="text-[14px] font-semibold hover:bg-red-50 px-[5px] py-[30px] duration-300 cursor-pointer text-gray-500 group">
-                FREE RESOURCES
-              </li>
+            <ul className="flex items-center ">
+              {megaMenuData.map((items, index) => {
+                const { subCategory } = items
+                return (
+                  <li key={index} className="text-[14px] font-semibold hover:bg-red-50 px-[10px] py-[35px] duration-300 cursor-pointer uppercase text-gray-500 group">
+                    {items.parentCategory}
+                    <div className="invisible opacity-0 group-hover:opacity-100 origin-top transition-all brightness-110  duration-300 ease-in-out group-hover:visible absolute top-[100%] left-1/2 -translate-x-1/2 w-[1100px] h-auto bg-white shadow-2xl border-[1px] border-gray-300 grid grid-cols-4 gap-4 p-5 rounded-b-[35px]">
+                      {subCategory.map((subCat, ind) => {
+                        const { subSubCategory } = subCat
+                        return (
+                          <ul key={ind}>
+                            <li className="text-[20px] uppercase text-red-600  mb-2">
+                              {subCat.name}
+                            </li>
+                            <ul>
+                              {subSubCategory.map((subSubCat, indx) => {
+                                const { courses } = subSubCat
+                                return (
+                                  <ul key={indx}>
+                                    <li className="text-[18px] capitalize my-4 ml-2 text-gray-700 flex items-center  gap-1"><VscTriangleRight /> {subSubCat.name}</li>
+                                    {courses.map((course, indexs) => {
+                                      return (
+                                        <li key={indexs} className="ml-8 my-[10px] text-gray-600 hover:text-red-600 duration-300">{course}</li>
+                                      )
+                                    })}
+                                  </ul>
+                                )
+                              })}
+
+                            </ul>
+                          </ul>
+                        )
+                      })}
+                    </div>
+                  </li>
+                )
+              })}
             </ul>
 
             <button

@@ -1,20 +1,64 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { MdLocalPhone, MdOutlineImportContacts } from "react-icons/md";
 import { FaGraduationCap, FaUser } from "react-icons/fa";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 export default function BookaSession() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const leftRef = useRef(null);
+  const formRef = useRef(null);
+
+  useEffect(() => {
+    if (!leftRef.current || !formRef.current) return;
+
+    // Left section comes from left (x: -100%)
+    gsap.fromTo(
+      leftRef.current,
+      { x: '-100%', opacity: 0 },
+      {
+        x: '0%',
+        opacity: 1,
+        duration: 1.2,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: leftRef.current,
+          start: 'top 60%',
+          toggleActions: 'play none none none',
+        },
+      }
+    );
+
+    // Right section (form) comes from right (x: 100%)
+    gsap.fromTo(
+      formRef.current,
+      { x: '100%', opacity: 0 },
+      {
+        x: '0%',
+        opacity: 1,
+        duration: 1.2,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: formRef.current,
+          start: 'top 60%',
+          toggleActions: 'play none none none',
+        },
+      }
+    );
+  }, []);
+
+
   return (
-    <div className="w-full bg-[#fff9f9] p-4 lg:p-10">
-      <div className="max-w-[1320px] mx-auto rounded-[40px] bg-white shadow-md overflow-hidden grid lg:grid-cols-[65%_auto] grid-cols-1">
+    <div style={{ backgroundImage: 'url("/bookSession.jpg")' }} className="w-full lg:my-[100px] bg-cover bg-center relative ">
+      <div className="absolute w-[100%] h-[100%] bg-gradient-to-r from-black/95 via-black/40 to-black/100"></div>
+      <div className="max-w-[1320px] mx-auto items-center overflow-hidden grid lg:grid-cols-[60%_auto] grid-cols-1">
         {/* Left Section */}
-        <div style={{ backgroundImage: 'url("/bookSession.jpg")' }} className="p-8 lg:p-12 bg-no-repeat bg-cover flex flex-col  space-y-6 bg-white relative z-40">
-          <div className="w-[100%] h-[100%] absolute top-0 left-0 z-[-10] bg-gradient-to-r from-black/80 via-black/70 to-black/50"></div>
-
-
+        <div ref={leftRef} className="p-8 lg:p-12 bg-no-repeat bg-cover flex flex-col  space-y-6  relative z-40">
           <div className="flex items-center gap-3 text-white">
             <MdOutlineImportContacts className="text-[40px] " />
-            <h3 className="text-[26px] lg:text-[40px] font-bold leading-tight text-white">
+            <h3 className="text-[26px] lg:text-[35px] font-bold leading-tight text-white">
               Book Your Free Counseling Session
             </h3>
           </div>
@@ -42,7 +86,7 @@ export default function BookaSession() {
 
           {/* Callout or Highlight
           <div className="bg-red-50 border-l-4 border-red-600 p-4 rounded-lg shadow-sm mt-4">
-            <p className="text-sm text-gray-700 font-medium">
+            <p className="text-sm text-white font-medium">
               🎯 9 out of 10 students say this session clarified their career direction.
             </p>
           </div> */}
@@ -54,64 +98,64 @@ export default function BookaSession() {
         </div>
 
         {/* Right Section - Form */}
-        <form className="p-8 lg:p-12 bg-white space-y-6 flex flex-col justify-center border-t-2 border-b-2 border-r-2 border-gray-200">
-          <h2 className="text-2xl font-bold text-gray-800">
+        <form ref={formRef} className="p-8 lg:p-12 z-40 border-2 border-white rounded-[15px] bg-black/10 text-white space-y-6 flex flex-col justify-center mx-10 my-15">
+          <h2 className="text-[27px] font-bold text-white">
             Fill in Your Details
           </h2>
 
           <div>
-            <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
+            <label htmlFor="name" className="block text-white font-medium mb-2">
               Full Name*
             </label>
             <input
               id="name"
               type="text"
               placeholder="John Doe"
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500 text-gray-800"
+              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500 text-white"
               required
             />
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
+            <label htmlFor="email" className="block text-white font-medium mb-2">
               Email Address*
             </label>
             <input
               id="email"
               type="email"
               placeholder="john@example.com"
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500 text-gray-800"
+              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500 text-white"
               required
             />
           </div>
 
           <div>
-            <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">
+            <label htmlFor="phone" className="block text-white font-medium mb-2">
               Phone Number*
             </label>
             <input
               id="phone"
               type="tel"
               placeholder="+91 98765 43210"
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500 text-gray-800"
+              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500 text-white"
               required
             />
           </div>
 
           <div>
-            <label htmlFor="exam" className="block text-gray-700 font-medium mb-2">
+            <label htmlFor="exam" className="block text-white font-medium mb-2">
               Exam Type*
             </label>
             <select
               id="exam"
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-red-500"
+              className="w-full border border-gray-300 rounded-lg px-4 py-3 bg-white text-black  focus:outline-none focus:ring-2 focus:ring-red-500"
               required
             >
-              <option value="">-- Select Exam Type --</option>
-              <option value="nift">NIFT</option>
-              <option value="nid">NID</option>
-              <option value="uceed">UCEED</option>
-              <option value="nata">NATA</option>
+              <option l value="">-- Select Exam Type --</option>
+              <option l value="nift">NIFT</option>
+              <option l value="nid">NID</option>
+              <option l value="uceed">UCEED</option>
+              <option l value="nata">NATA</option>
             </select>
           </div>
 

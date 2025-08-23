@@ -7,7 +7,7 @@ import { FaPhoneAlt, FaUserAlt } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
-import { categoryData } from "../categoryData/categoryApi";
+import { megaMenuData } from "../categoryData/categoryApi";
 
 export default function BannerSlider() {
   const [contactModel, setcontactModel] = useState(false);
@@ -19,7 +19,7 @@ export default function BannerSlider() {
     { heading: ['Tour & Travel', 'Institute Trips'], description: 'Daily live sessions for practical learning sessions for practical learning learning sessions for practical learning', src: '/tourTravel.JPG' },
   ]
 
-  console.log(categoryData)
+  console.log(megaMenuData)
 
 
   var settings = {
@@ -40,11 +40,11 @@ export default function BannerSlider() {
           return (
             <div key={index} className="">
               <div
-                className="w-[100%] h-[70vh] bg-cover relative"
+                className="w-[100%] h-[75vh] bg-cover relative"
 
               >
                 <img className="w-[100%] h-[100%] object-cover object-center " src={item.src} alt="" />
-                <div className="w-[100%] h-[100%] absolute left-0 top-0 bg-gradient-to-r from-black/95 via-black/20 to-black/90"></div>
+                <div className="w-[100%] h-[100%] absolute left-0 top-0 bg-gradient-to-r from-black/90 via-black/10 to-black/90"></div>
 
                 <motion.div
                   className="max-w-[600px] absolute top-[13%] left-[5%]"
@@ -52,7 +52,7 @@ export default function BannerSlider() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 3 }}
                 >
-                  <h2 className="font-bold uppercase lg:text-[45px] text-[30px] tracking-widest text-white">
+                  <h2 className="font-bold uppercase lg:text-[50px] text-[30px] tracking-widest text-white">
                     <Typewriter
                       options={{
                         strings: item.heading,
@@ -64,7 +64,7 @@ export default function BannerSlider() {
                   </h2>
 
                   <motion.p
-                    className="mt-4 text-[18px] lg:leading-[35px] tracking-widest text-white"
+                    className="max-w-[450px] mt-4 text-[18px] lg:leading-[35px] tracking-widest text-white"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 1, duration: 1 }}

@@ -1,309 +1,44 @@
-import Link from "next/link"
-import { useState } from "react"
+import Link from "next/link";
+import { useState } from "react";
+import { megaMenuData } from "../categoryData/categoryApi";
+import MegaMenuContent from "./MegaMenuContent";
 
 export default function MegaMenu({ MegaMenuOpen, setMegaMenuOpen }) {
-    let [activeTab, setActiveTab] = useState('onlineCourse')
+    const [activeTab, setActiveTab] = useState("onlineCourse");
 
-    //group-hover:visible invisible scale-y-0 group-hover:scale-y-100 
+    const tabMap = {
+        onlineCourse: "Online Courses",
+        offlineCourse: "Offline courses",
+        studyMaterial: "Study Material",
+        testSeries: "Test Series",
+        freeRes: "Free Resources",
+    };
+
     return (
-        <div onClick={(e) => e.stopPropagation()} className={`${MegaMenuOpen ? ' translate-y-0 block opacity-100 visible' : 'invisible -translate-y-10 opacity-0 hidden'} absolute duration-400 transition-all ease-in-out top-[100%] 
-        left-[170px] bg-white shadow-2xl rounded-b-[15px] w-[900px] origin-top h-[auto] z-[100]
-         px-5 lg:block hidden text-gray-900`}>
-            <div className="grid grid-cols-[25%_auto] gap-5" >
+        <div
+            onClick={(e) => e.stopPropagation()}
+            className={`${MegaMenuOpen
+                ? "translate-y-0 block opacity-100 visible"
+                : "invisible -translate-y-10 opacity-0 hidden"
+                } absolute duration-400 transition-all ease-in-out top-[100%] left-[170px] bg-white shadow-2xl rounded-b-[15px] w-[900px] origin-top h-[auto] z-[100] px-5 py-5 lg:block hidden text-gray-900`}
+        >
+            <div className="grid grid-cols-[25%_auto] gap-5">
                 <div className="border-0">
                     <ul>
-                        <li onClick={() => setActiveTab('onlineCourse')} className="text-start text-[18px] mb-[10px] py-[10px] px-3 rounded-[10px] duration-500 hover:bg-gray-200 relative group">Online Course
-                        </li>
-                        <li onClick={() => setActiveTab('offlineCourse')} className="text-start text-[18px] mb-[10px] py-[10px] px-3 rounded-[10px] duration-500 hover:bg-gray-200 ">Offline Course</li>
-                        <li onClick={() => setActiveTab('studyMaterial')} className="text-start text-[18px] mb-[10px] py-[10px] px-3 rounded-[10px] duration-500 hover:bg-gray-200 ">Study Material</li>
-                        <li onClick={() => setActiveTab('testSeries')} className="text-start text-[18px] mb-[10px] py-[10px] px-3 rounded-[10px] duration-500 hover:bg-gray-200 ">Test Series</li>
-                        <li onClick={() => setActiveTab('freeRes')} className="text-start text-[18px] mb-[10px] py-[10px] px-3 rounded-[10px] duration-500 hover:bg-gray-200 ">Free Resources</li>
+                        <li onClick={() => setActiveTab("onlineCourse")} className="menu-tab w-full hover:bg-gray-300 duration-300 rounded-[10px] text-[17px] text-start px-2 py-3">Online Course</li>
+                        <li onClick={() => setActiveTab("offlineCourse")} className="menu-tab w-full hover:bg-gray-300 duration-300 rounded-[10px] text-[17px] text-start px-2 py-3">Offline Course</li>
+                        <li onClick={() => setActiveTab("studyMaterial")} className="menu-tab w-full hover:bg-gray-300 duration-300 rounded-[10px] text-[17px] text-start px-2 py-3">Study Material</li>
+                        <li onClick={() => setActiveTab("testSeries")} className="menu-tab w-full hover:bg-gray-300 duration-300 rounded-[10px] text-[17px] text-start px-2 py-3">Test Series</li>
+                        <li onClick={() => setActiveTab("freeRes")} className="menu-tab w-full hover:bg-gray-300 duration-300 rounded-[10px] text-[17px] text-start px-2 py-3">Free Resources</li>
                     </ul>
                 </div>
                 <div className="h-[80vh] overflow-y-scroll">
-                    {activeTab === 'onlineCourse' && <OnlineCourse setMegaMenuOpen={setMegaMenuOpen} />}
-                    {activeTab === 'offlineCourse' && <OfflineCourse setMegaMenuOpen={setMegaMenuOpen} />}
-                    {activeTab === 'studyMaterial' && <StudyMaterial setMegaMenuOpen={setMegaMenuOpen} />}
-                    {activeTab === 'testSeries' && <TestSeries setMegaMenuOpen={setMegaMenuOpen} />}
-                    {activeTab === 'freeRes' && <FreeRes setMegaMenuOpen={setMegaMenuOpen} />}
-                </div>
-            </div>
-        </div >
-    )
-}
-
-export function OnlineCourse({ setMegaMenuOpen }) {
-    let ugCourse = [
-        'Design Course',
-        'graphic Course',
-        'Interior Course',
-        'Design Course',
-        'Design Course',
-        'Interior Course',
-        'Design Course',
-        'Design Course',
-        'Interior Course',
-        'Design Course',
-        'Design Course',
-    ]
-    return (
-        <div className="p-0">
-            <div className="w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ">
-                <h3 className="border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]">UG Exams</h3>
-                <div className="grid grid-cols-4 gap-5 mt-5 w-full">
-                    {ugCourse.map((item, index) => {
-                        return (
-                            <Link href={`/course/${item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-')}-online`}><button onClick={() => setMegaMenuOpen(false)} key={index} className="text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ">{item}</button></Link>
-                        )
-                    })}
-                </div>
-            </div>
-            <div className="w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ">
-                <h3 className="border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]">UG Exams</h3>
-                <div className="grid grid-cols-4 gap-5 mt-5 w-full">
-                    {ugCourse.map((item, index) => {
-                        return (
-                            <Link href={`/course/${item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-')}-online`}><button onClick={() => setMegaMenuOpen(false)} key={index} className="text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ">{item}</button></Link>
-                        )
-                    })}
-                </div>
-            </div>
-            <div className="w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ">
-                <h3 className="border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]">UG Exams</h3>
-                <div className="grid grid-cols-4 gap-5 mt-5 w-full">
-                    {ugCourse.map((item, index) => {
-                        return (
-                            <Link href={`/course/${item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-')}-online`}><button onClick={() => setMegaMenuOpen(false)} key={index} className="text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ">{item}</button></Link>
-                        )
-                    })}
-                </div>
-            </div>
-            <div className="w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ">
-                <h3 className="border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]">UG Exams</h3>
-                <div className="grid grid-cols-4 gap-5 mt-5 w-full">
-                    {ugCourse.map((item, index) => {
-                        return (
-                            <Link href={`/course/${item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-')}-online`}><button onClick={() => setMegaMenuOpen(false)} key={index} className="text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ">{item}</button></Link>
-                        )
-                    })}
+                    <MegaMenuContent
+                        category={tabMap[activeTab]}
+                        setMegaMenuOpen={setMegaMenuOpen}
+                    />
                 </div>
             </div>
         </div>
-    )
-}
-
-export function OfflineCourse({ setMegaMenuOpen }) {
-    let ugCourse = [
-        'Design Course',
-        'Design Course',
-        'Design Course',
-        'Design Course',
-    ]
-    return (
-        <div className="p-0">
-            <div className="w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ">
-                <h3 className="border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]">UG Exams</h3>
-                <div className="grid grid-cols-4 gap-5 mt-5 w-full">
-                    {ugCourse.map((item, index) => {
-                        return (
-                            <Link href={`/course/${item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-')}-online`}><button onClick={() => setMegaMenuOpen(false)} key={index} className="text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ">{item}</button></Link>
-                        )
-                    })}
-                </div>
-            </div>
-            <div className="w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ">
-                <h3 className="border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]">UG Exams</h3>
-                <div className="grid grid-cols-4 gap-5 mt-5 w-full">
-                    {ugCourse.map((item, index) => {
-                        return (
-                            <Link href={`/course/${item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-')}-online`}><button onClick={() => setMegaMenuOpen(false)} key={index} className="text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ">{item}</button></Link>
-                        )
-                    })}
-                </div>
-            </div>
-            <div className="w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ">
-                <h3 className="border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]">UG Exams</h3>
-                <div className="grid grid-cols-4 gap-5 mt-5 w-full">
-                    {ugCourse.map((item, index) => {
-                        return (
-                            <Link href={`/course/${item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-')}-online`}><button onClick={() => setMegaMenuOpen(false)} key={index} className="text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ">{item}</button></Link>
-                        )
-                    })}
-                </div>
-            </div>
-            <div className="w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ">
-                <h3 className="border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]">UG Exams</h3>
-                <div className="grid grid-cols-4 gap-5 mt-5 w-full">
-                    {ugCourse.map((item, index) => {
-                        return (
-                            <Link href={`/course/${item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-')}-online`}><button onClick={() => setMegaMenuOpen(false)} key={index} className="text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ">{item}</button></Link>
-                        )
-                    })}
-                </div>
-            </div>
-        </div>
-    )
-}
-
-export function StudyMaterial({ setMegaMenuOpen }) {
-    let ugCourse = [
-        'Design Course',
-        'graphic Course',
-        'Interior Course',
-        'Design Course',
-        'Design Course',
-        'Design Course',
-    ]
-    return (
-        <div className="p-0">
-            <div className="w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ">
-                <h3 className="border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]">UG Exams</h3>
-                <div className="grid grid-cols-4 gap-5 mt-5 w-full">
-                    {ugCourse.map((item, index) => {
-                        return (
-                            <Link href={`/course/${item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-')}-online`}><button onClick={() => setMegaMenuOpen(false)} key={index} className="text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ">{item}</button></Link>
-                        )
-                    })}
-                </div>
-            </div>
-            <div className="w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ">
-                <h3 className="border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]">UG Exams</h3>
-                <div className="grid grid-cols-4 gap-5 mt-5 w-full">
-                    {ugCourse.map((item, index) => {
-                        return (
-                            <Link href={`/course/${item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-')}-online`}><button onClick={() => setMegaMenuOpen(false)} key={index} className="text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ">{item}</button></Link>
-                        )
-                    })}
-                </div>
-            </div>
-            <div className="w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ">
-                <h3 className="border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]">UG Exams</h3>
-                <div className="grid grid-cols-4 gap-5 mt-5 w-full">
-                    {ugCourse.map((item, index) => {
-                        return (
-                            <Link href={`/course/${item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-')}-online`}><button onClick={() => setMegaMenuOpen(false)} key={index} className="text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ">{item}</button></Link>
-                        )
-                    })}
-                </div>
-            </div>
-            <div className="w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ">
-                <h3 className="border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]">UG Exams</h3>
-                <div className="grid grid-cols-4 gap-5 mt-5 w-full">
-                    {ugCourse.map((item, index) => {
-                        return (
-                            <Link href={`/course/${item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-')}-online`}><button onClick={() => setMegaMenuOpen(false)} key={index} className="text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ">{item}</button></Link>
-                        )
-                    })}
-                </div>
-            </div>
-        </div>
-    )
-}
-
-export function TestSeries({ setMegaMenuOpen }) {
-    let ugCourse = [
-        'Design Course',
-        'graphic Course',
-        'Interior Course',
-        'Design Course',
-        'Design Course',
-    ]
-    return (
-        <div className="p-0">
-            <div className="w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ">
-                <h3 className="border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]">UG Exams</h3>
-                <div className="grid grid-cols-4 gap-5 mt-5 w-full">
-                    {ugCourse.map((item, index) => {
-                        return (
-                            <Link href={`/course/${item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-')}-online`}><button onClick={() => setMegaMenuOpen(false)} key={index} className="text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ">{item}</button></Link>
-                        )
-                    })}
-                </div>
-            </div>
-            <div className="w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ">
-                <h3 className="border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]">UG Exams</h3>
-                <div className="grid grid-cols-4 gap-5 mt-5 w-full">
-                    {ugCourse.map((item, index) => {
-                        return (
-                            <Link href={`/course/${item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-')}-online`}><button onClick={() => setMegaMenuOpen(false)} key={index} className="text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ">{item}</button></Link>
-                        )
-                    })}
-                </div>
-            </div>
-            <div className="w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ">
-                <h3 className="border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]">UG Exams</h3>
-                <div className="grid grid-cols-4 gap-5 mt-5 w-full">
-                    {ugCourse.map((item, index) => {
-                        return (
-                            <Link href={`/course/${item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-')}-online`}><button onClick={() => setMegaMenuOpen(false)} key={index} className="text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ">{item}</button></Link>
-                        )
-                    })}
-                </div>
-            </div>
-            <div className="w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ">
-                <h3 className="border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]">UG Exams</h3>
-                <div className="grid grid-cols-4 gap-5 mt-5 w-full">
-                    {ugCourse.map((item, index) => {
-                        return (
-                            <Link href={`/course/${item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-')}-online`}><button onClick={() => setMegaMenuOpen(false)} key={index} className="text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ">{item}</button></Link>
-                        )
-                    })}
-                </div>
-            </div>
-        </div>
-    )
-}
-
-export function FreeRes({ setMegaMenuOpen }) {
-    let ugCourse = [
-        'Design Course',
-        'graphic Course',
-        'Interior Course',
-        'Design Course',
-        'Design Course',
-    ]
-    return (
-        <div className="p-0">
-            <div className="w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ">
-                <h3 className="border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]">UG Exams</h3>
-                <div className="grid grid-cols-4 gap-5 mt-5 w-full">
-                    {ugCourse.map((item, index) => {
-                        return (
-                            <Link href={`/course/${item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-')}-online`}><button onClick={() => setMegaMenuOpen(false)} key={index} className="text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ">{item}</button></Link>
-                        )
-                    })}
-                </div>
-            </div>
-            <div className="w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ">
-                <h3 className="border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]">UG Exams</h3>
-                <div className="grid grid-cols-4 gap-5 mt-5 w-full">
-                    {ugCourse.map((item, index) => {
-                        return (
-                            <Link href={`/course/${item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-')}-online`}><button onClick={() => setMegaMenuOpen(false)} key={index} className="text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ">{item}</button></Link>
-                        )
-                    })}
-                </div>
-            </div>
-            <div className="w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ">
-                <h3 className="border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]">UG Exams</h3>
-                <div className="grid grid-cols-4 gap-5 mt-5 w-full">
-                    {ugCourse.map((item, index) => {
-                        return (
-                            <Link href={`/course/${item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-')}-online`}><button onClick={() => setMegaMenuOpen(false)} key={index} className="text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ">{item}</button></Link>
-                        )
-                    })}
-                </div>
-            </div>
-            <div className="w-full h-auto mb-5 origin-top transition-all ease-in-out duration-400 ">
-                <h3 className="border-red-500 border-l-4 bg-red-50 text-red-500  rounded-xl  w-full px-[10px] py-[14px]">UG Exams</h3>
-                <div className="grid grid-cols-4 gap-5 mt-5 w-full">
-                    {ugCourse.map((item, index) => {
-                        return (
-                            <Link href={`/course/${item.toLowerCase().replace(/[^a-zA-Z0-9]/g, '-')}-online`}><button onClick={() => setMegaMenuOpen(false)} key={index} className="text-start bg-gray-100 border-l-4 border-red-500 hover:border-transparent hover:bg-red-600 hover:text-white transition-all ease-in-out duration-300 rounded-xl px-[5px] cursor-pointer text-[15px] py-[10px] ">{item}</button></Link>
-                        )
-                    })}
-                </div>
-            </div>
-        </div>
-    )
+    );
 }

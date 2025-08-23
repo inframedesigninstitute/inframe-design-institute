@@ -9,7 +9,84 @@ __turbopack_context__.s({
 const categoryData = [
     {
         parentCategory: 'Online Courses',
-        subCategory: 's'
+        subCategory: [
+            {
+                'UG EXAMS': [
+                    {
+                        'DESIGN UG EXAMS': [
+                            'NIFT Offline Course',
+                            'NID Offline Course',
+                            'UCEED Offline course',
+                            'FDDI Offline Course'
+                        ]
+                    },
+                    {
+                        'ARCHITECTURE UG EXAMS': [
+                            'NATA Online Courses',
+                            'JEE B.Arch Online Courses',
+                            'COMBOS NATA/JEE'
+                        ]
+                    }
+                ]
+            },
+            {
+                'UG EXAMS': [
+                    {
+                        'DESIGN UG EXAMS': [
+                            'NIFT Offline Course',
+                            'NID Offline Course',
+                            'UCEED Offline course',
+                            'FDDI Offline Course'
+                        ]
+                    },
+                    {
+                        'ARCHITECTURE UG EXAMS': [
+                            'NATA Online Courses',
+                            'JEE B.Arch Online Courses',
+                            'COMBOS NATA/JEE'
+                        ]
+                    }
+                ]
+            },
+            {
+                'UG EXAMS': [
+                    {
+                        'DESIGN UG EXAMS': [
+                            'NIFT Offline Course',
+                            'NID Offline Course',
+                            'UCEED Offline course',
+                            'FDDI Offline Course'
+                        ]
+                    },
+                    {
+                        'ARCHITECTURE UG EXAMS': [
+                            'NATA Online Courses',
+                            'JEE B.Arch Online Courses',
+                            'COMBOS NATA/JEE'
+                        ]
+                    }
+                ]
+            },
+            {
+                'UG EXAMS': [
+                    {
+                        'DESIGN UG EXAMS': [
+                            'NIFT Offline Course',
+                            'NID Offline Course',
+                            'UCEED Offline course',
+                            'FDDI Offline Course'
+                        ]
+                    },
+                    {
+                        'ARCHITECTURE UG EXAMS': [
+                            'NATA Online Courses',
+                            'JEE B.Arch Online Courses',
+                            'COMBOS NATA/JEE'
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 ];
 }),
